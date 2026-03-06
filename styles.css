@@ -1171,24 +1171,11 @@ body {
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .nav {
-        flex-wrap: wrap;
         gap: 0.75rem;
     }
 
-    .logo {
-        order: 1;
-    }
-
-    .lang-toggle {
-        order: 2;
-        margin-left: auto;
-    }
-
     .nav-links {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        gap: 1rem;
+        display: none;
     }
 
     .hero {
