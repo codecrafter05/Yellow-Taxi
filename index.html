@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Taxi - Professional Taxi Services in Bahrain</title>
+    <meta name="description" content="Yellow Taxi - 24/7 professional taxi services. Airport transfers, Gulf travel, tourist trips. Contact: 37159404">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Popup -->
+    <div class="welcome-popup" id="welcomePopup" role="dialog" aria-label="Welcome message">
+        <div class="welcome-popup-inner">
+            <button type="button" class="welcome-popup-close" id="welcomePopupClose" aria-label="Close">×</button>
+            <div class="welcome-popup-content">
+                <p class="welcome-popup-msg" data-en="Welcome to Yellow Taxi! We're here 24/7. Call or WhatsApp us anytime for your ride." data-ar="مرحباً بكم في التاكسي الأصفر! متوفرون ٢٤ ساعة. اتصلوا أو واتساب في أي وقت لرحلتكم.">Welcome to Yellow Taxi! We're here 24/7. Call or WhatsApp us anytime for your ride.</p>
+                <a href="tel:+97337159404" class="welcome-popup-btn" data-en="Call Now" data-ar="اتصل الآن">Call Now</a>
+                <a href="#" class="welcome-popup-btn welcome-popup-whatsapp" id="welcomeWhatsAppBtn" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <img src="1.png" alt="Yellow Taxi" width="120" height="50">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                <li><a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a></li>
+                <li><a href="#fleet" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</a></li>
+                <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+            </ul>
+            <div class="lang-toggle" role="group" aria-label="Language">
+                <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">العربية</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-in" data-en="Yellow Taxi" data-ar="التاكسي الأصفر">Yellow Taxi</h1>
+            <p class="hero-subtitle animate-in" data-en="Professional Transportation 24/7" data-ar="نقل احترافي على مدار الساعة">Professional Transportation 24/7</p>
+            <p class="hero-desc animate-in" data-en="Airport transfers, Gulf travel, tours & more" data-ar="نقل المطار، سفر الخليج، الرحلات السياحية والمزيد">Airport transfers, Gulf travel, tours & more</p>
+            <a href="#contact" class="cta-btn animate-in" data-en="Book Now" data-ar="احجز الآن">Book Now</a>
+        </div>
+        <img src="hero.png" alt="Professional taxi service" class="hero-img" loading="eager">
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro scroll-reveal">
+        <div class="container">
+            <h2 class="section-title" data-en="Welcome to Yellow Taxi" data-ar="مرحباً بكم في التاكسي الأصفر">Welcome to Yellow Taxi</h2>
+            <p class="intro-text" data-en="We are a trusted name in professional transportation across Bahrain and the Gulf. Available 24 hours, 7 days a week — call us anytime and we'll arrange your ride immediately. Our team of professional drivers ensures a comfortable, safe, and punctual journey every time." data-ar="نحن اسم موثوق في النقل الاحترافي في البحرين والخليج. متوفرون ٢٤ ساعة طوال أيام الأسبوع — اتصل بنا في أي وقت ونرتب لكم ونباشر بالخدمة بشكل مباشر. فريقنا من السائقين المحترفين يضمن لكم رحلة مريحة وآمنة وفي الموعد دائماً.">We are a trusted name in professional transportation across Bahrain and the Gulf. Available 24 hours, 7 days a week — call us anytime and we'll arrange your ride immediately. Our team of professional drivers ensures a comfortable, safe, and punctual journey every time.</p>
+            <div class="intro-features">
+                <div class="intro-feature">
+                    <span class="intro-icon">⏰</span>
+                    <span data-en="24/7 Service" data-ar="خدمة على مدار الساعة">24/7 Service</span>
+                </div>
+                <div class="intro-feature">
+                    <span class="intro-icon">✓</span>
+                    <span data-en="Immediate Response" data-ar="استجابة فورية">Immediate Response</span>
+                </div>
+                <div class="intro-feature">
+                    <span class="intro-icon">🛡️</span>
+                    <span data-en="Safe & Professional" data-ar="آمن واحترافي">Safe & Professional</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title scroll-reveal" data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
+            <p class="section-desc scroll-reveal" data-en="From airport transfers to Gulf-wide travel — we cover all your transportation needs." data-ar="من نقل المطار إلى السفر لجميع الخليج — نغطي جميع احتياجاتك للنقل.">From airport transfers to Gulf-wide travel — we cover all your transportation needs.</p>
+
+            <!-- Airport Transfers -->
+            <div class="service-group scroll-reveal">
+                <h3 class="service-group-title" data-en="Airport Transfers" data-ar="نقل المطار">Airport Transfers</h3>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Airport to hotel" loading="lazy">
+                            <span class="service-badge" data-en="Popular" data-ar="الأكثر طلباً">Popular</span>
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Airport to Hotel" data-ar="من المطار إلى الفندق">Airport to Hotel</h4>
+                            <p data-en="Share your flight arrival time and we'll be waiting at the airport door. No stress, no waiting — we take you directly to your hotel in comfort." data-ar="شاركنا موعد نزول رحلتك ونكون في استقبالك عند باب المطار. بدون توتر أو انتظار — نوصلك مباشرة إلى فندقك براحة.">Share your flight arrival time and we'll be waiting at the airport door. No stress, no waiting — we take you directly to your hotel in comfort.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Hotel to airport" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Hotel to Airport" data-ar="من الفندق إلى المطار">Hotel to Airport</h4>
+                            <p data-en="Reliable transfers from your hotel to Bahrain International Airport. We track your flight schedule — on time, every time, for business or leisure." data-ar="توصيل موثوق من فندقك إلى مطار البحرين الدولي. نتابع مواعيد رحلتك — في الموعد دائماً، للعمل أو الترفيه.">Reliable transfers from your hotel to Bahrain International Airport. We track your flight schedule — on time, every time, for business or leisure.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Dammam Airport" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Dammam Airport, Saudi Arabia" data-ar="مطار الدمام السعودية">Dammam Airport, Saudi Arabia</h4>
+                            <p data-en="Direct transfers to King Fahd International Airport in Dammam. Ideal for business trips, tourism, or family visits. Book in advance for a smooth journey." data-ar="نقل مباشر إلى مطار الملك فهد الدولي في الدمام. مثالي لرحلات العمل أو السياحة أو الزيارات العائلية. احجز مسبقاً لرحلة ملساء.">Direct transfers to King Fahd International Airport in Dammam. Ideal for business trips, tourism, or family visits. Book in advance for a smooth journey.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Gulf & Saudi -->
+            <div class="service-group scroll-reveal">
+                <h3 class="service-group-title" data-en="Gulf & Saudi Arabia Travel" data-ar="سفر الخليج والسعودية">Gulf & Saudi Arabia Travel</h3>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Gulf travel" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="All Gulf Countries" data-ar="جميع دول الخليج">All Gulf Countries</h4>
+                            <p data-en="Travel to UAE, Kuwait, Oman, Qatar, and Saudi Arabia. We handle cross-border trips, business meetings, family visits, and tourism — comfortable vehicles for short or long journeys." data-ar="نسافر إلى الإمارات والكويت وعمان وقطر والسعودية. ننفذ رحلات العبور والاجتماعات العائلية والزيارات — سيارات مريحة للرحلات القصيرة والطويلة.">Travel to UAE, Kuwait, Oman, Qatar, and Saudi Arabia. We handle cross-border trips, business meetings, family visits, and tourism — comfortable vehicles for short or long journeys.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Saudi tourism" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Saudi Arabia — Tourism & Transport" data-ar="السعودية — رحلات سياحية وتوصيل">Saudi Arabia — Tourism & Transport</h4>
+                            <p data-en="Tourist trips across Saudi Arabia or simple point-to-point transfers. Visit historical sites, cities, or events — we plan the route with you." data-ar="رحلات سياحية في السعودية أو توصيل من نقطة لنقطة. زيارة المواقع التاريخية أو المدن أو المناسبات — نخطط المسار معك.">Tourist trips across Saudi Arabia or simple point-to-point transfers. Visit historical sites, cities, or events — we plan the route with you.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Bahrain Local -->
+            <div class="service-group scroll-reveal">
+                <h3 class="service-group-title" data-en="Bahrain — Local & Tours" data-ar="البحرين — محلي وسياحي">Bahrain — Local & Tours</h3>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Tours in Bahrain" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Tourist Trips in Bahrain" data-ar="رحلات سياحية داخل البحرين">Tourist Trips in Bahrain</h4>
+                            <p data-en="Discover Bahrain with our guided tours. From Bahrain Fort and Tree of Life to Muharraq heritage, Pearl Trail, and modern Manama — explore the island in comfort." data-ar="اكتشف البحرين مع جولاتنا السياحية. من قلعة البحرين وشجرة الحياة إلى تراث المحرق ومسار اللؤلؤ ومنامة الحديثة — استكشف الجزيرة براحة.">Discover Bahrain with our guided tours. From Bahrain Fort and Tree of Life to Muharraq heritage, Pearl Trail, and modern Manama — explore the island in comfort.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Local transport" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Transport Within Bahrain" data-ar="توصيل داخل البحرين">Transport Within Bahrain</h4>
+                            <p data-en="Quick and comfortable local transfers anywhere in Bahrain. Restaurants, malls, offices, hospitals, or home — we get you there on time." data-ar="توصيل سريع ومريح داخل البحرين. مطاعم، مولات، مكاتب، مستشفيات، أو المنزل — نوصلّك في الموعد.">Quick and comfortable local transfers anywhere in Bahrain. Restaurants, malls, offices, hospitals, or home — we get you there on time.</p>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-img-wrap">
+                            <img src="image.png" alt="Events" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h4 data-en="Events & Occasions" data-ar="الفعاليات والمناسبات">Events & Occasions</h4>
+                            <p data-en="Weddings, conferences, corporate events, or family gatherings — we provide group transport with spacious vehicles for your guests." data-ar="أعراس، مؤتمرات، فعاليات عمل، أو تجمعات عائلية — نوفر نقل جماعي بسيارات واسعة للضيوف.">Weddings, conferences, corporate events, or family gatherings — we provide group transport with spacious vehicles for your guests.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner (Middle) -->
+    <section class="cta-banner scroll-reveal">
+        <div class="cta-banner-inner">
+            <div class="cta-banner-content">
+                <p class="cta-banner-tagline" data-en="One call, immediate service" data-ar="اتصال واحد وخدمة فورية">One call, immediate service</p>
+                <h3 class="cta-banner-title" data-en="Ready for your ride?" data-ar="مستعد لرحلتك؟">Ready for your ride?</h3>
+                <p class="cta-banner-desc" data-en="Call or WhatsApp now — we're available 24/7" data-ar="اتصل أو واتساب الآن — متوفرون على مدار الساعة">Call or WhatsApp now — we're available 24/7</p>
+                <div class="cta-banner-buttons">
+                    <a href="tel:+97337159404" class="cta-banner-btn cta-banner-btn-phone">
+                        <span class="cta-banner-btn-icon">📞</span>
+                        <span data-en="Call 37159404" data-ar="اتصل 37159404">Call 37159404</span>
+                    </a>
+                    <a href="#" class="cta-banner-btn cta-banner-btn-whatsapp whatsapp-link" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر.">
+                        <span class="cta-banner-btn-icon">WhatsApp</span>
+                        <span data-en="WhatsApp 37159404" data-ar="واتساب 37159404">WhatsApp 37159404</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title scroll-reveal" data-en="Why Choose Yellow Taxi" data-ar="لماذا التاكسي الأصفر">Why Choose Yellow Taxi</h2>
+            <p class="section-desc scroll-reveal" data-en="We combine reliability, comfort, and professionalism in every trip." data-ar="نجمع الموثوقية والراحة والاحترافية في كل رحلة.">We combine reliability, comfort, and professionalism in every trip.</p>
+            <div class="why-grid scroll-reveal">
+                <div class="why-card">
+                    <div class="why-icon">🕐</div>
+                    <h4 data-en="24/7 Availability" data-ar="متوفرون ٢٤ ساعة">24/7 Availability</h4>
+                    <p data-en="Every day, any hour. Early flights, late nights, or last-minute trips — we're always ready." data-ar="كل يوم، أي ساعة. رحلات مبكرة، ليالي متأخرة، أو رحلات فورية — نحن جاهزون دائماً.">Every day, any hour. Early flights, late nights, or last-minute trips — we're always ready.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">⚡</div>
+                    <h4 data-en="Immediate Start" data-ar="بدء فوري">Immediate Start</h4>
+                    <p data-en="Call us and we arrange everything. No long waits — we begin service as soon as you need it." data-ar="اتصل بنا ونرتب كل شيء. دون انتظار طويل — نبدأ الخدمة فور حاجتك.">Call us and we arrange everything. No long waits — we begin service as soon as you need it.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🚗</div>
+                    <h4 data-en="All Vehicle Types" data-ar="جميع أنواع السيارات">All Vehicle Types</h4>
+                    <p data-en="From compact cars to large family SUVs — GMC, Chevrolet, and more. Choose what fits your trip." data-ar="من سيارات صغيرة إلى SUV عائلية كبيرة — جمس، شفروليه، وغيرها. اختر ما يناسب رحلتك.">From compact cars to large family SUVs — GMC, Chevrolet, and more. Choose what fits your trip.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">👔</div>
+                    <h4 data-en="Professional Drivers" data-ar="سائقون محترفون">Professional Drivers</h4>
+                    <p data-en="Experienced, courteous, and punctual. Your safety and comfort are our priority." data-ar="ذوو خبرة ومؤدبون وفي الموعد. سلامتك وراحتك أولويتنا.">Experienced, courteous, and punctual. Your safety and comfort are our priority.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">🌍</div>
+                    <h4 data-en="Gulf-Wide Coverage" data-ar="تغطية خليجية">Gulf-Wide Coverage</h4>
+                    <p data-en="Bahrain and beyond — we travel across the Gulf. One number for all your regional trips." data-ar="البحرين وما بعدها — نسافر في كل الخليج. رقم واحد لجميع رحلاتك الإقليمية.">Bahrain and beyond — we travel across the Gulf. One number for all your regional trips.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="container">
+            <h2 class="section-title scroll-reveal" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</h2>
+            <p class="section-desc scroll-reveal" data-en="From small economy cars to large family SUVs — the right vehicle for every journey." data-ar="من سيارات اقتصادية صغيرة إلى SUV عائلية كبيرة — السيارة المناسبة لكل رحلة.">From small economy cars to large family SUVs — the right vehicle for every journey.</p>
+            <div class="fleet-content scroll-reveal">
+                <div class="fleet-text">
+                    <p data-en="We provide all types of vehicles: small cars for quick city trips, sedans for business, and large family cars like GMC Yukon, Chevrolet Tahoe/Suburban for airport transfers, Gulf trips, and group travel. Spacious, comfortable, and always clean." data-ar="نوفر جميع أنواع السيارات: صغيرة للتنقل السريع، سيدان للعمل، وسيارات عائلية كبيرة مثل جمس يوكون وشفروليه تاهو وسوبربان لنقل المطار ورحلات الخليج والسفر الجماعي. واسعة ومريحة ونظيفة دائماً.">We provide all types of vehicles: small cars for quick city trips, sedans for business, and large family cars like GMC Yukon, Chevrolet Tahoe/Suburban for airport transfers, Gulf trips, and group travel. Spacious, comfortable, and always clean.</p>
+                    <ul class="fleet-list">
+                        <li data-en="Compact & economy cars" data-ar="سيارات صغيرة واقتصادية">Compact & economy cars</li>
+                        <li data-en="Sedans for business" data-ar="سيدان للأعمال">Sedans for business</li>
+                        <li data-en="GMC Yukon & large SUVs" data-ar="جمس يوكون و SUV كبيرة">GMC Yukon & large SUVs</li>
+                        <li data-en="Chevrolet Tahoe & Suburban" data-ar="شفروليه تاهو وسوبربان">Chevrolet Tahoe & Suburban</li>
+                        <li data-en="Family & group transport" data-ar="نقل عائلي وجماعي">Family & group transport</li>
+                    </ul>
+                </div>
+                <div class="fleet-img-wrap">
+                    <img src="image.png" alt="Our fleet - GMC and large vehicles" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item scroll-reveal">
+                    <span class="stat-num">24/7</span>
+                    <span class="stat-label" data-en="Available" data-ar="متوفر">Available</span>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <span class="stat-num" data-en="All Gulf" data-ar="كل الخليج">All Gulf</span>
+                    <span class="stat-label" data-en="Coverage" data-ar="تغطية">Coverage</span>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <span class="stat-num" data-en="Any Car" data-ar="أي سيارة">Any Car</span>
+                    <span class="stat-label" data-en="Size" data-ar="حجم">Size</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title scroll-reveal" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h2>
+            <p class="contact-intro scroll-reveal" data-en="Available 24 hours, 7 days a week. Call or WhatsApp — we respond quickly and start service right away." data-ar="متوفرون ٢٤ ساعة طوال أيام الأسبوع. اتصل أو واتساب — نرد بسرعة ونبدأ الخدمة فوراً.">Available 24 hours, 7 days a week. Call or WhatsApp — we respond quickly and start service right away.</p>
+            <div class="contact-buttons">
+                <a href="tel:+97337159404" class="contact-btn phone">
+                    <span class="contact-icon">📞</span>
+                    <span data-en="Call: 37159404" data-ar="اتصال: 37159404">Call: 37159404</span>
+                </a>
+                <a href="#" class="contact-btn whatsapp whatsapp-link" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر.">
+                    <span class="contact-icon">WhatsApp</span>
+                    <span data-en="WhatsApp: 37159404" data-ar="واتساب: 37159404">WhatsApp: 37159404</span>
+                </a>
+            </div>
+            <p class="contact-note" data-en="We arrange and start service immediately upon your call." data-ar="نتفق ونباشر بالخدمة بشكل مباشر عند اتصالك.">We arrange and start service immediately upon your call.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img src="2.png" alt="Yellow Taxi" class="footer-logo" width="100" height="42">
+                <p class="footer-text" data-en="© Yellow Taxi. Professional transportation services across Bahrain and the Gulf." data-ar="© التاكسي الأصفر. خدمات نقل احترافية في البحرين والخليج.">© Yellow Taxi. Professional transportation services across Bahrain and the Gulf.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
