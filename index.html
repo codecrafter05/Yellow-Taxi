@@ -31,6 +31,47 @@
       "url": "https://yellow-taxi-bh.com"
     }
     </script>
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I book a taxi in Bahrain?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book a taxi in Bahrain by calling us at 37159404 or messaging us on WhatsApp. We respond immediately and start service right away."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer airport taxi service?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide airport taxi service in Bahrain including transfers from Bahrain International Airport to your hotel and back. Share your flight time and we'll be at the airport door."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide taxi trips to Saudi Arabia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Yellow Taxi Bahrain provides taxi trips to Saudi Arabia including Dammam, Khobar and other GCC destinations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the taxi service available 24/7?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our Bahrain taxi service is available 24 hours a day, 7 days a week. Call or WhatsApp anytime."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Welcome Popup -->
@@ -55,6 +96,7 @@
                 <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
                 <li><a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a></li>
                 <li><a href="#fleet" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</a></li>
+                <li><a href="#faq" data-en="FAQ" data-ar="أسئلة شائعة">FAQ</a></li>
                 <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
             </ul>
             <div class="lang-toggle" role="group" aria-label="Language">
@@ -68,12 +110,19 @@
     <section class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title animate-in" data-en="Yellow Taxi" data-ar="التاكسي الأصفر">Yellow Taxi</h1>
+            <h1 class="hero-title animate-in">Taxi Service in Bahrain Yellow Taxi Bahrain 24/7</h1>
             <p class="hero-subtitle animate-in" data-en="Professional Transportation 24/7" data-ar="نقل احترافي على مدار الساعة">Professional Transportation 24/7</p>
             <p class="hero-desc animate-in" data-en="Airport transfers, Gulf travel, tours & more" data-ar="نقل المطار، سفر الخليج، الرحلات السياحية والمزيد">Airport transfers, Gulf travel, tours & more</p>
             <a href="#contact" class="cta-btn animate-in" data-en="Book Now" data-ar="احجز الآن">Book Now</a>
         </div>
         <img src="hero.png" alt="Professional taxi service" class="hero-img" loading="eager">
+    </section>
+
+    <!-- SEO Content - visually hidden, readable by search engines -->
+    <section class="seo-only" aria-hidden="true">
+        <div class="container">
+            <p>Yellow Taxi Bahrain provides reliable and professional taxi services across the Kingdom of Bahrain including Manama, Muharraq and surrounding areas. Our drivers offer fast airport transfers, city transportation and long distance travel including trips to Saudi Arabia, Dammam and Khobar. We operate 24/7 to ensure safe and comfortable transportation for residents and tourists.</p>
+        </div>
     </section>
 
     <!-- Intro Section -->
@@ -101,8 +150,31 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title scroll-reveal" data-en="Our Services" data-ar="خدماتنا">Our Services</h2>
-            <p class="section-desc scroll-reveal" data-en="From airport transfers to Gulf-wide travel — we cover all your transportation needs." data-ar="من نقل المطار إلى السفر لجميع الخليج — نغطي جميع احتياجاتك للنقل.">From airport transfers to Gulf-wide travel — we cover all your transportation needs.</p>
+            <h2 class="section-title scroll-reveal">Our Taxi Services in Bahrain</h2>
+            <p class="section-desc scroll-reveal">From airport transfers to Gulf-wide travel — we cover all your transportation needs with our Bahrain taxi service.</p>
+
+            <div class="seo-services-list scroll-reveal">
+                <div class="seo-service-item">
+                    <h3 class="seo-service-title">Airport Taxi Bahrain</h3>
+                    <p class="seo-service-desc">Our airport taxi Bahrain service meets you at Bahrain International Airport and takes you to Manama, Muharraq or any destination. Share your flight arrival time and we'll be ready.</p>
+                </div>
+                <div class="seo-service-item">
+                    <h3 class="seo-service-title">City Taxi Manama</h3>
+                    <p class="seo-service-desc">Need a taxi Manama? Our city taxi service covers Manama, Seef, Juffair and surrounding areas for quick local trips, business meetings or shopping.</p>
+                </div>
+                <div class="seo-service-item">
+                    <h3 class="seo-service-title">Taxi to Saudi Arabia</h3>
+                    <p class="seo-service-desc">We provide taxi to Saudi Arabia for Dammam, Khobar and other destinations. GCC long distance taxi service with comfortable vehicles for the journey.</p>
+                </div>
+                <div class="seo-service-item">
+                    <h3 class="seo-service-title">Hotel to Airport Transfers</h3>
+                    <p class="seo-service-desc">Reliable hotel to airport transfers from any Bahrain hotel to Bahrain International Airport. We track your flight for on-time pickup.</p>
+                </div>
+                <div class="seo-service-item">
+                    <h3 class="seo-service-title">GCC Long Distance Taxi</h3>
+                    <p class="seo-service-desc">Our Bahrain taxi service extends across the GCC. Travel to UAE, Kuwait, Oman, Qatar and Saudi Arabia with Yellow Taxi Bahrain.</p>
+                </div>
+            </div>
 
             <!-- Airport Transfers -->
             <div class="service-group scroll-reveal">
@@ -224,9 +296,20 @@
     <!-- Why Us Section -->
     <section class="why-us" id="why-us">
         <div class="container">
-            <h2 class="section-title scroll-reveal" data-en="Why Choose Yellow Taxi" data-ar="لماذا التاكسي الأصفر">Why Choose Yellow Taxi</h2>
-            <p class="section-desc scroll-reveal" data-en="We combine reliability, comfort, and professionalism in every trip." data-ar="نجمع الموثوقية والراحة والاحترافية في كل رحلة.">We combine reliability, comfort, and professionalism in every trip.</p>
-            <div class="why-grid scroll-reveal">
+            <h2 class="section-title scroll-reveal">Why Choose Yellow Taxi Bahrain</h2>
+            <p class="section-desc scroll-reveal">We combine reliability, comfort, and professionalism in every trip.</p>
+            <div class="why-us-layout scroll-reveal">
+                <div class="why-highlights">
+                    <h3 class="why-highlights-title">Key Benefits</h3>
+                    <ul class="why-highlights-list">
+                        <li>24/7 Taxi Service</li>
+                        <li>Professional Drivers</li>
+                        <li>Airport Transfers</li>
+                        <li>GCC Travel Available</li>
+                        <li>Fast Pickup Anywhere in Bahrain</li>
+                    </ul>
+                </div>
+                <div class="why-grid">
                 <div class="why-card">
                     <div class="why-icon">🕐</div>
                     <h4 data-en="24/7 Availability" data-ar="متوفرون ٢٤ ساعة">24/7 Availability</h4>
@@ -246,6 +329,7 @@
                     <div class="why-icon">🌍</div>
                     <h4 data-en="Gulf-Wide Coverage" data-ar="تغطية خليجية">Gulf-Wide Coverage</h4>
                     <p data-en="Bahrain and beyond — we travel across the Gulf. One number for all your regional trips." data-ar="البحرين وما بعدها — نسافر في كل الخليج. رقم واحد لجميع رحلاتك الإقليمية.">Bahrain and beyond — we travel across the Gulf. One number for all your regional trips.</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -274,6 +358,33 @@
         </div>
     </section>
 
+    <!-- Areas We Serve -->
+    <section class="areas-section scroll-reveal">
+        <div class="container">
+            <h2 class="section-title">Areas We Serve</h2>
+            <p class="section-desc">Yellow Taxi Bahrain serves locations across the Kingdom — no limits. Our Bahrain taxi service reaches you wherever you are.</p>
+            <div class="areas-grid">
+                <div class="area-item">Manama</div>
+                <div class="area-item">Muharraq</div>
+                <div class="area-item">Riffa</div>
+                <div class="area-item">Isa Town</div>
+                <div class="area-item">Saar</div>
+                <div class="area-item">Seef</div>
+                <div class="area-item">Juffair</div>
+                <div class="area-item">Adliya</div>
+                <div class="area-item">Hamad Town</div>
+                <div class="area-item">Sitra</div>
+                <div class="area-item">Budaiya</div>
+                <div class="area-item">Amwaj</div>
+                <div class="area-item">Diplomatic</div>
+                <div class="area-item">Sanabis</div>
+                <div class="area-item">Jidhafs</div>
+                <div class="area-item area-item-wide">Bahrain International Airport</div>
+                <div class="area-item area-item-more" data-en="And more..." data-ar="والمزيد">And more...</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Stats Section -->
     <section class="stats">
         <div class="container">
@@ -289,6 +400,52 @@
                 <div class="stat-item scroll-reveal">
                     <span class="stat-num" data-en="Any Car" data-ar="أي سيارة">Any Car</span>
                     <span class="stat-label" data-en="Size" data-ar="حجم">Size</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section scroll-reveal" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-desc">Find quick answers about our Bahrain taxi service.</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                        <span>How can I book a taxi in Bahrain?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">You can book a taxi in Bahrain by calling us at <strong>37159404</strong> or messaging us on WhatsApp. We respond immediately and start service right away.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                        <span>Do you offer airport taxi service?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. We provide airport taxi service in Bahrain including transfers from Bahrain International Airport to your hotel and back. Share your flight time and we'll be at the airport door.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                        <span>Do you provide taxi trips to Saudi Arabia?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. Yellow Taxi Bahrain provides taxi trips to Saudi Arabia including Dammam, Khobar and other GCC destinations.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question-btn" aria-expanded="false">
+                        <span>Is the taxi service available 24/7?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer-wrap">
+                        <p class="faq-answer">Yes. Our Bahrain taxi service is available 24 hours a day, 7 days a week. Call or WhatsApp anytime.</p>
+                    </div>
                 </div>
             </div>
         </div>

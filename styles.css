@@ -48,6 +48,19 @@ body {
     padding: 0 1.25rem;
 }
 
+/* SEO-only: hidden from view, readable by search engines */
+.seo-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 /* ===== Welcome Popup ===== */
 .welcome-popup {
     position: fixed;
@@ -355,7 +368,7 @@ body {
     text-align: center;
     color: var(--white);
     padding: 2rem 1.5rem;
-    max-width: 600px;
+    max-width: 780px;
 }
 
 .hero-title {
@@ -479,6 +492,44 @@ body {
     padding-bottom: 0.5rem;
     border-bottom: 2px solid var(--accent);
     color: var(--black);
+}
+
+/* SEO Services List - card grid */
+.seo-services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.seo-service-item {
+    background: var(--white);
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.seo-service-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.seo-service-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+    color: var(--black);
+}
+
+.seo-service-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+    text-align: left;
 }
 
 .services-grid {
@@ -668,12 +719,58 @@ body {
 }
 
 .why-us .section-desc {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.why-us-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.why-highlights {
+    background: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+    position: sticky;
+    top: 100px;
+}
+
+.why-highlights-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.why-highlights-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.why-highlights-list li {
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--gray-700);
+}
+
+.why-highlights-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
 }
 
 .why-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
@@ -828,6 +925,146 @@ body {
     margin: 0;
 }
 
+/* ===== Areas We Serve ===== */
+.areas-section {
+    padding: 4rem 0;
+    background: var(--gray-100);
+}
+
+.areas-section .section-desc {
+    margin-bottom: 2rem;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.area-item {
+    background: var(--white);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius);
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--black);
+    box-shadow: var(--shadow);
+    transition: transform var(--transition), box-shadow var(--transition);
+    border-left: 4px solid var(--accent);
+}
+
+.area-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+}
+
+.area-item-wide {
+    grid-column: span 2;
+}
+
+.area-item-more {
+    background: var(--accent);
+    color: var(--black);
+    border-left: none;
+    font-style: italic;
+}
+
+[dir="rtl"] .area-item-more {
+    border-right: none;
+}
+
+@media (max-width: 480px) {
+    .area-item-wide {
+        grid-column: span 1;
+    }
+
+    .areas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== FAQ Section ===== */
+.faq-section {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.faq-section .section-desc {
+    margin-bottom: 2rem;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.faq-question-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border: none;
+    background: var(--gray-100);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    color: var(--black);
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.faq-question-btn:hover {
+    background: var(--gray-200);
+}
+
+.faq-icon {
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: transform var(--transition);
+}
+
+.faq-item.faq-open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer-wrap {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.faq-open .faq-answer-wrap {
+    max-height: 500px;
+}
+
+.faq-answer {
+    margin: 0;
+    padding: 1rem 1.25rem 1.25rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-600);
+    text-align: left;
+    border-top: 1px solid var(--gray-200);
+}
+
+[dir="rtl"] .faq-question-btn {
+    text-align: right;
+}
+
+[dir="rtl"] .faq-answer {
+    text-align: right;
+}
+
 /* ===== Stats ===== */
 .stats {
     padding: 3rem 0;
@@ -912,6 +1149,25 @@ body {
     right: 0;
 }
 
+[dir="rtl"] .seo-service-desc {
+    text-align: right;
+}
+
+[dir="rtl"] .why-highlights-list li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+[dir="rtl"] .why-highlights-list li::before {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .area-item {
+    border-left: none;
+    border-right: 4px solid var(--accent);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
     .nav {
@@ -981,6 +1237,14 @@ body {
 
     .why-grid {
         grid-template-columns: 1fr;
+    }
+
+    .why-us-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .why-highlights {
+        position: static;
     }
 }
 

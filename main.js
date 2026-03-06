@@ -131,13 +131,33 @@
         setLang('en');
     }
 
+    /* FAQ Accordion */
+    function initFaqAccordion() {
+        document.querySelectorAll('.faq-question-btn').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                var item = btn.closest('.faq-item');
+                var isOpen = item.classList.contains('faq-open');
+                document.querySelectorAll('.faq-item').forEach(function (i) {
+                    i.classList.remove('faq-open');
+                    i.querySelector('.faq-question-btn').setAttribute('aria-expanded', 'false');
+                });
+                if (!isOpen) {
+                    item.classList.add('faq-open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+    }
+
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function () {
             initWelcomePopup();
             initWhatsAppLinks();
+            initFaqAccordion();
         });
     } else {
         initWelcomePopup();
         initWhatsAppLinks();
+        initFaqAccordion();
     }
 })();
