@@ -6,7 +6,6 @@
 
     var html = document.documentElement;
     var langBtns = document.querySelectorAll('.lang-btn');
-    var elements = document.querySelectorAll('[data-en][data-ar]');
 
     function getLang() {
         return html.lang === 'ar' ? 'ar' : 'en';
@@ -99,8 +98,9 @@
         html.lang = lang;
         html.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
-        elements.forEach(function (el) {
-            el.textContent = el.getAttribute('data-' + lang) || el.textContent;
+        document.querySelectorAll('[data-en][data-ar]').forEach(function (el) {
+            var text = el.getAttribute('data-' + lang);
+            if (text != null && text !== '') el.textContent = text;
         });
 
         langBtns.forEach(function (btn) {
