@@ -229,12 +229,14 @@ body {
 }
 
 .lang-btn {
+    display: inline-block;
     padding: 0.4rem 0.75rem;
     border: none;
     background: var(--white);
     color: var(--gray-700);
     cursor: pointer;
     font-size: 0.9rem;
+    text-decoration: none;
     transition: all var(--transition);
 }
 
@@ -1201,10 +1203,77 @@ a.area-item:focus-visible {
 }
 
 /* ===== Route landing pages ===== */
+.route-page .section-title,
+.route-page .section-desc,
+.route-page .intro-text,
+.route-page .route-prose {
+    text-align: start;
+}
+
+.route-page .section-desc,
+.route-page .intro-text,
+.route-page .route-prose {
+    max-width: 720px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.route-page .section-desc {
+    margin-bottom: 1.5rem;
+}
+
+.route-page .intro-text,
+.route-page .route-prose {
+    margin: 0 0 1.25rem;
+    font-size: 1.05rem;
+    color: var(--gray-700);
+    line-height: 1.65;
+}
+
+.route-page a.route-inline-link,
+.route-page .intro-text a,
+.route-page .route-prose a,
+.route-page .route-steps a,
+.route-page .faq-answer a {
+    color: var(--black);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+.route-page a.route-inline-link:hover,
+.route-page .intro-text a:hover,
+.route-page .route-prose a:hover,
+.route-page .route-steps a:hover,
+.route-page .faq-answer a:hover {
+    color: var(--accent);
+}
+
+.route-page .route-section {
+    padding: 4rem 0;
+}
+
+.route-page .route-section--alt {
+    background: var(--gray-100);
+}
+
+.route-page .faq-section.route-section {
+    padding: 4rem 0;
+}
+
+/* Hero — two columns */
 .route-page .route-hero {
     margin-top: 60px;
-    padding: 2.5rem 0 1.5rem;
+    padding: 2.5rem 0 2rem;
     background: linear-gradient(180deg, var(--gray-100) 0%, var(--white) 100%);
+}
+
+.route-page .route-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 2.5rem;
+    align-items: center;
 }
 
 .route-page .breadcrumb {
@@ -1212,7 +1281,7 @@ a.area-item:focus-visible {
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     font-size: 0.9rem;
     color: var(--gray-600);
 }
@@ -1226,6 +1295,7 @@ a.area-item:focus-visible {
 .route-page .breadcrumb a:focus-visible {
     color: var(--black);
     text-decoration: underline;
+    text-decoration-color: var(--accent);
 }
 
 .route-page .route-h1 {
@@ -1233,10 +1303,12 @@ a.area-item:focus-visible {
     text-shadow: none;
     font-size: clamp(1.75rem, 4vw, 2.5rem);
     margin: 0 0 1rem;
+    text-align: start;
+    line-height: 1.2;
 }
 
 .route-page .route-lead {
-    max-width: 720px;
+    max-width: 36rem;
     margin: 0 0 1.5rem;
     font-size: 1.1rem;
     color: var(--gray-700);
@@ -1260,102 +1332,338 @@ a.area-item:focus-visible {
     color: var(--white);
 }
 
-.route-page .route-section {
-    padding: 3rem 0;
-}
-
-.route-page .route-includes {
-    list-style: none;
-    margin: 1.5rem 0 0;
+.route-page .route-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
+    margin: 1.25rem 0 0;
     padding: 0;
-    max-width: 720px;
-}
-
-.route-page .route-includes li {
-    position: relative;
-    padding: 0.85rem 0 0.85rem 1.25rem;
-    border-bottom: 1px solid var(--gray-200);
+    list-style: none;
+    font-size: 0.9rem;
+    font-weight: 600;
     color: var(--gray-700);
 }
 
-.route-page .route-includes li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 1.15rem;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--accent);
+.route-page .route-trust li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
+.route-page .route-trust li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex-shrink: 0;
+}
+
+.route-page .route-hero-media {
+    margin: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--gray-200);
+    box-shadow: var(--shadow);
+}
+
+.route-page .route-hero-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* What's included — cards */
+.route-page .route-include-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.route-page .route-include-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    box-shadow: var(--shadow);
+}
+
+.route-page .route-include-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 0.85rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--black);
+}
+
+.route-page .route-include-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.route-page .route-include-card strong {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-size: 1.05rem;
+}
+
+.route-page .route-include-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--gray-700);
+    line-height: 1.5;
+}
+
+/* How booking works — numbered steps */
 .route-page .route-steps {
     list-style: none;
-    margin: 1.5rem 0 0;
+    margin: 0;
     padding: 0;
     counter-reset: route-step;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.25rem;
-    max-width: 720px;
 }
 
 .route-page .route-steps li {
     counter-increment: route-step;
-    padding: 1.25rem 1.25rem 1.25rem 4rem;
-    background: var(--gray-100);
+    padding: 1.5rem 1.25rem 1.25rem;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
     border-radius: var(--radius);
+    box-shadow: var(--shadow);
     position: relative;
 }
 
 .route-page .route-steps li::before {
     content: counter(route-step);
-    position: absolute;
-    left: 1rem;
-    top: 1.25rem;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: var(--accent);
-    color: var(--black);
-    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--black);
+    font-weight: 800;
+    font-size: 1.25rem;
 }
 
 .route-page .route-steps h3 {
-    margin: 0 0 0.35rem;
+    margin: 0 0 0.4rem;
     font-size: 1.1rem;
 }
 
 .route-page .route-steps p {
     margin: 0;
     color: var(--gray-700);
+    font-size: 0.95rem;
 }
 
+/* Saudi / cross-border highlight band */
+.route-page .route-highlight {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--black) 0%, var(--black-soft) 55%, #111 100%);
+    color: var(--white);
+}
+
+.route-page .route-highlight .section-title {
+    color: var(--white);
+}
+
+.route-page .route-highlight .route-prose {
+    color: var(--gray-300);
+    max-width: 40rem;
+}
+
+.route-page .route-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.route-page .route-highlight-grid--single {
+    grid-template-columns: minmax(0, 28rem);
+}
+
+.route-page .route-highlight-card {
+    display: block;
+    padding: 1.25rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    transition: background var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.route-page .route-highlight-card:hover,
+.route-page .route-highlight-card:focus-visible {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--black);
+    transform: translateY(-2px);
+}
+
+.route-page .route-highlight-card span {
+    display: block;
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+.route-page .route-highlight-card:hover span,
+.route-page .route-highlight-card:focus-visible span {
+    opacity: 1;
+}
+
+/* Final yellow CTA */
+.route-page .route-final-cta {
+    padding: 4rem 0;
+    background: var(--accent);
+}
+
+.route-page .route-final-tagline {
+    margin: 0 0 0.35rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black-soft);
+    text-align: start;
+}
+
+.route-page .route-final-cta .section-title {
+    margin-bottom: 0.5rem;
+}
+
+.route-page .route-final-cta .route-prose {
+    color: var(--black-soft);
+    margin-bottom: 1.5rem;
+}
+
+.route-page .route-final-cta .route-cta-row .cta-btn {
+    background: var(--black);
+    color: var(--white);
+}
+
+.route-page .route-final-cta .route-cta-row .cta-btn:hover {
+    background: var(--black-soft);
+}
+
+.route-page .route-final-cta .route-cta-row .cta-btn-secondary {
+    background: transparent;
+    color: var(--black);
+    border-color: var(--black);
+}
+
+.route-page .route-final-cta .route-cta-row .cta-btn-secondary:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+/* Other routes */
 .route-page .other-routes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1rem;
-    margin-top: 1.25rem;
+    margin-top: 0.25rem;
 }
 
-[dir="rtl"] .route-page .route-includes li {
-    padding: 0.85rem 1.25rem 0.85rem 0;
+/* Mobile sticky contact bar */
+.route-sticky-bar {
+    display: none;
 }
 
-[dir="rtl"] .route-page .route-includes li::before {
-    left: auto;
-    right: 0;
+@media (max-width: 900px) {
+    .route-page .route-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .route-page .route-hero-media {
+        order: -1;
+        aspect-ratio: 16 / 10;
+        max-height: 280px;
+    }
+
+    .route-page .route-include-grid,
+    .route-page .route-steps,
+    .route-page .route-highlight-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-[dir="rtl"] .route-page .route-steps li {
-    padding: 1.25rem 4rem 1.25rem 1.25rem;
-}
+@media (max-width: 768px) {
+    .route-page .route-section,
+    .route-page .route-highlight,
+    .route-page .route-final-cta,
+    .route-page .faq-section.route-section {
+        padding: 2.5rem 0;
+    }
 
-[dir="rtl"] .route-page .route-steps li::before {
-    left: auto;
-    right: 1rem;
+    .route-page .route-hero {
+        padding: 1.75rem 0 1.5rem;
+    }
+
+    .route-sticky-bar {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 900;
+        gap: 0.5rem;
+        padding: 0.65rem 0.85rem calc(0.65rem + env(safe-area-inset-bottom, 0px));
+        background: var(--white);
+        border-top: 1px solid var(--gray-200);
+        box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .route-sticky-bar a {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.75rem;
+        padding: 0.55rem 0.75rem;
+        border-radius: var(--radius);
+        font-weight: 700;
+        font-size: 0.95rem;
+        text-decoration: none;
+    }
+
+    .route-sticky-bar .route-sticky-wa {
+        background: #25d366;
+        color: #fff;
+    }
+
+    .route-sticky-bar .route-sticky-call {
+        background: var(--black);
+        color: var(--white);
+    }
+
+    .route-page {
+        padding-bottom: 4.75rem;
+    }
 }
 
 /* ===== 404 ===== */

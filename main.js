@@ -1,32 +1,21 @@
 /**
- * Yellow Taxi - Language Switcher + Scroll Reveal + Welcome Popup + WhatsApp (minimal JS)
+ * Yellow Taxi - Scroll Reveal + WhatsApp (language via page URL / html[lang])
  */
 (function () {
     'use strict';
 
     var html = document.documentElement;
-    var langBtns = document.querySelectorAll('.lang-btn');
 
     function getLang() {
         return html.lang === 'ar' ? 'ar' : 'en';
     }
 
-    /* Welcome Popup - show on load */
+    /* Welcome Popup - show on load (if present) */
     function initWelcomePopup() {
         var popup = document.getElementById('welcomePopup');
         var closeBtn = document.getElementById('welcomePopupClose');
         var whatsappBtn = document.getElementById('welcomeWhatsAppBtn');
         if (!popup || !closeBtn) return;
-
-        function updatePopupLang() {
-            var lang = getLang();
-            var msg = popup.querySelector('.welcome-popup-msg');
-            var btns = popup.querySelectorAll('[data-en][data-ar]');
-            if (msg) msg.textContent = msg.getAttribute('data-' + lang) || msg.textContent;
-            btns.forEach(function (b) {
-                if (b.hasAttribute('data-en')) b.textContent = b.getAttribute('data-' + lang) || b.textContent;
-            });
-        }
 
         popup.classList.add('welcome-popup-visible');
 
@@ -44,9 +33,6 @@
                 openWhatsApp(getLang());
             });
         }
-
-        /* Update popup when language changes - called from setLang */
-        window.updateWelcomePopupLang = updatePopupLang;
     }
 
     /* WhatsApp with pre-filled message */
@@ -88,69 +74,6 @@
         });
     }
 
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initScrollReveal);
-    } else {
-        initScrollReveal();
-    }
-
-    var pageMeta = {
-        en: {
-            title: 'Bahrain Taxi 24/7 | Airport & Saudi Transfers - Yellow Taxi',
-            description: 'Book a taxi in Bahrain 24/7: Bahrain Airport pickups and direct trips to Dammam, Khobar and Riyadh with Causeway procedures handled. WhatsApp 37159404.'
-        },
-        ar: {
-            title: 'تاكسي البحرين 24 ساعة | تكسي المطار والسعودية - Yellow Taxi',
-            description: 'اطلب تاكسي في البحرين 24 ساعة: توصيل من وإلى مطار البحرين، مشاوير داخلية، ورحلات للدمام والخبر والرياض عبر جسر الملك فهد. اتصل أو واتساب 37159404.'
-        }
-    };
-
-    function setLang(lang) {
-        html.lang = lang;
-        html.dir = lang === 'ar' ? 'rtl' : 'ltr';
-
-        document.querySelectorAll('[data-en][data-ar]').forEach(function (el) {
-            var text = el.getAttribute('data-' + lang);
-            if (text != null && text !== '') el.textContent = text;
-        });
-
-        /* Home page only — landing pages keep their own static title/description */
-        if (html.hasAttribute('data-home-meta')) {
-            var meta = pageMeta[lang] || pageMeta.en;
-            document.title = meta.title;
-            var metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) metaDesc.setAttribute('content', meta.description);
-        }
-        /* og:description / twitter:description stay EN — social crawlers do not run JS */
-
-        langBtns.forEach(function (btn) {
-            var isActive = btn.getAttribute('data-lang') === lang;
-            btn.classList.toggle('active', isActive);
-            btn.setAttribute('aria-pressed', isActive);
-        });
-
-        try {
-            localStorage.setItem('yellow-taxi-lang', lang);
-        } catch (e) {}
-
-        if (typeof window.updateWelcomePopupLang === 'function') {
-            window.updateWelcomePopupLang();
-        }
-    }
-
-    langBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            setLang(btn.getAttribute('data-lang'));
-        });
-    });
-
-    var saved = typeof localStorage !== 'undefined' && localStorage.getItem('yellow-taxi-lang');
-    if (saved && (saved === 'en' || saved === 'ar')) {
-        setLang(saved);
-    } else {
-        setLang('en');
-    }
-
     /* FAQ Accordion */
     function initFaqAccordion() {
         document.querySelectorAll('.faq-question-btn').forEach(function (btn) {
@@ -171,11 +94,13 @@
 
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', function () {
+            initScrollReveal();
             initWelcomePopup();
             initWhatsAppLinks();
             initFaqAccordion();
         });
     } else {
+        initScrollReveal();
         initWelcomePopup();
         initWhatsAppLinks();
         initFaqAccordion();
