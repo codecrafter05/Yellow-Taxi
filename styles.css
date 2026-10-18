@@ -1498,6 +1498,10 @@ a.area-item:focus-visible {
     margin-top: 1.5rem;
 }
 
+.route-page .route-highlight-grid--single {
+    grid-template-columns: minmax(0, 28rem);
+}
+
 .route-page .route-highlight-card {
     display: block;
     padding: 1.25rem;
