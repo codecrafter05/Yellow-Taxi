@@ -96,8 +96,8 @@
 
     var pageMeta = {
         en: {
-            title: 'Bahrain Taxi | Yellow Taxi Bahrain 24/7 Airport & Hotel Transfers',
-            description: 'Book a taxi in Bahrain with Yellow Taxi — airport to hotel, local trips, and Gulf transfers around the clock. Call or WhatsApp 37159404 for fast pickup.'
+            title: 'Bahrain Taxi 24/7 | Airport & Saudi Transfers - Yellow Taxi',
+            description: 'Book a taxi in Bahrain 24/7: Bahrain Airport pickups and direct trips to Dammam, Khobar and Riyadh with Causeway procedures handled. WhatsApp 37159404.'
         },
         ar: {
             title: 'تاكسي البحرين 24 ساعة | تكسي المطار والسعودية - Yellow Taxi',
@@ -114,10 +114,13 @@
             if (text != null && text !== '') el.textContent = text;
         });
 
-        var meta = pageMeta[lang] || pageMeta.en;
-        document.title = meta.title;
-        var metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) metaDesc.setAttribute('content', meta.description);
+        /* Home page only — landing pages keep their own static title/description */
+        if (html.hasAttribute('data-home-meta')) {
+            var meta = pageMeta[lang] || pageMeta.en;
+            document.title = meta.title;
+            var metaDesc = document.querySelector('meta[name="description"]');
+            if (metaDesc) metaDesc.setAttribute('content', meta.description);
+        }
         /* og:description / twitter:description stay EN — social crawlers do not run JS */
 
         langBtns.forEach(function (btn) {
