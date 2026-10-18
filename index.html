@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-home-meta>
+<html lang="en" dir="ltr">
 <head>
     <script>document.documentElement.classList.add('js');</script>
     <meta charset="UTF-8">
@@ -9,6 +9,9 @@
     <meta name="author" content="Yellow Taxi">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0a0a0a">
+    <link rel="alternate" hreflang="en" href="https://yellow-taxi-bh.com/">
+    <link rel="alternate" hreflang="ar" href="https://yellow-taxi-bh.com/ar/">
+    <link rel="alternate" hreflang="x-default" href="https://yellow-taxi-bh.com/">
     <link rel="canonical" href="https://yellow-taxi-bh.com/">
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
@@ -191,9 +194,9 @@
         <div class="welcome-popup-inner">
             <button type="button" class="welcome-popup-close" id="welcomePopupClose" aria-label="Close">×</button>
             <div class="welcome-popup-content">
-                <p class="welcome-popup-msg" data-en="Welcome to Yellow Taxi! We're here 24/7. Call or WhatsApp us anytime for your ride." data-ar="مرحباً بكم في التاكسي الأصفر! متوفرون ٢٤ ساعة. اتصلوا أو واتساب في أي وقت لرحلتكم.">Welcome to Yellow Taxi! We're here 24/7. Call or WhatsApp us anytime for your ride.</p>
-                <a href="tel:+97337159404" class="welcome-popup-btn" data-en="Call Now" data-ar="اتصل الآن">Call Now</a>
-                <a href="#" class="welcome-popup-btn welcome-popup-whatsapp" id="welcomeWhatsAppBtn" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+                <p class="welcome-popup-msg">Welcome to Yellow Taxi! We're here 24/7. Call or WhatsApp us anytime for your ride.</p>
+                <a href="tel:+97337159404" class="welcome-popup-btn">Call Now</a>
+                <a href="#" class="welcome-popup-btn welcome-popup-whatsapp" id="welcomeWhatsAppBtn">WhatsApp</a>
             </div>
         </div>
     </div> -->
@@ -205,15 +208,15 @@
                 <img src="1.png" alt="Yellow Taxi" width="1687" height="984">
             </a>
             <ul class="nav-links">
-                <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
-                <li><a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a></li>
-                <li><a href="#fleet" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</a></li>
-                <li><a href="#faq" data-en="FAQ" data-ar="أسئلة شائعة">FAQ</a></li>
-                <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#fleet">Our Fleet</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="lang-toggle" role="group" aria-label="Language">
-                <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
-                <button type="button" class="lang-btn" data-lang="ar" aria-pressed="false">العربية</button>
+                <a class="lang-btn active" href="/" hreflang="en" lang="en" aria-current="page">EN</a>
+                <a class="lang-btn" href="/ar/" hreflang="ar" lang="ar">العربية</a>
             </div>
         </nav>
     </header>
@@ -222,10 +225,10 @@
     <section class="hero" id="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title animate-in" data-en="Taxi Service in Bahrain – Yellow Taxi Bahrain 24/7" data-ar="خدمة تكسي في البحرين – التاكسي الأصفر ٢٤ ساعة">Taxi Service in Bahrain – Yellow Taxi Bahrain 24/7</h1>
-            <p class="hero-subtitle animate-in" data-en="Professional Transportation 24/7" data-ar="نقل احترافي على مدار الساعة">Professional Transportation 24/7</p>
-            <p class="hero-desc animate-in" data-en="Airport transfers, Gulf travel, tours & more" data-ar="نقل المطار، سفر الخليج، الرحلات السياحية والمزيد">Airport transfers, Gulf travel, tours & more</p>
-            <a href="#contact" class="cta-btn animate-in" data-en="Book Now" data-ar="احجز الآن">Book Now</a>
+            <h1 class="hero-title animate-in">Taxi Service in Bahrain – Yellow Taxi Bahrain 24/7</h1>
+            <p class="hero-subtitle animate-in">Professional Transportation 24/7</p>
+            <p class="hero-desc animate-in">Airport transfers, Gulf travel, tours & more</p>
+            <a href="#contact" class="cta-btn animate-in">Book Now</a>
         </div>
         <img src="hero.png" alt="Professional taxi service" class="hero-img" width="972" height="684" loading="eager" fetchpriority="high">
     </section>
@@ -233,20 +236,20 @@
     <!-- Intro Section -->
     <section class="intro scroll-reveal">
         <div class="container">
-            <h2 class="section-title" data-en="Welcome to Yellow Taxi" data-ar="مرحباً بكم في التاكسي الأصفر">Welcome to Yellow Taxi</h2>
-            <p class="intro-text" data-en="We are a trusted name in professional transportation across Bahrain and the Gulf, including Manama, Muharraq, and surrounding areas. Available 24 hours, 7 days a week — call us anytime and we'll arrange your ride immediately. Our team of professional drivers ensures a comfortable, safe, and punctual journey every time." data-ar="نحن اسم موثوق في النقل الاحترافي في البحرين والخليج، بما في ذلك المنامة والمحرق والمناطق المحيطة. متوفرون ٢٤ ساعة طوال أيام الأسبوع — اتصل بنا في أي وقت ونرتب لكم ونباشر بالخدمة بشكل مباشر. فريقنا من السائقين المحترفين يضمن لكم رحلة مريحة وآمنة وفي الموعد دائماً.">We are a trusted name in professional transportation across Bahrain and the Gulf, including Manama, Muharraq, and surrounding areas. Available 24 hours, 7 days a week — call us anytime and we'll arrange your ride immediately. Our team of professional drivers ensures a comfortable, safe, and punctual journey every time.</p>
+            <h2 class="section-title">Welcome to Yellow Taxi</h2>
+            <p class="intro-text">We are a trusted name in professional transportation across Bahrain and the Gulf, including Manama, Muharraq, and surrounding areas. Available 24 hours, 7 days a week — call us anytime and we'll arrange your ride immediately. Our team of professional drivers ensures a comfortable, safe, and punctual journey every time.</p>
             <div class="intro-features">
                 <div class="intro-feature">
                     <span class="intro-icon">⏰</span>
-                    <span data-en="24/7 Service" data-ar="خدمة على مدار الساعة">24/7 Service</span>
+                    <span>24/7 Service</span>
                 </div>
                 <div class="intro-feature">
                     <span class="intro-icon">✓</span>
-                    <span data-en="Immediate Response" data-ar="استجابة فورية">Immediate Response</span>
+                    <span>Immediate Response</span>
                 </div>
                 <div class="intro-feature">
                     <span class="intro-icon">🛡️</span>
-                    <span data-en="Safe & Professional" data-ar="آمن واحترافي">Safe & Professional</span>
+                    <span>Safe & Professional</span>
                 </div>
             </div>
         </div>
@@ -255,79 +258,79 @@
     <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title scroll-reveal" data-en="Our Taxi Services in Bahrain" data-ar="خدمات التاكسي في البحرين">Our Taxi Services in Bahrain</h2>
-            <p class="section-desc scroll-reveal" data-en="From airport transfers to Gulf-wide travel — we cover all your transportation needs with our Bahrain taxi service." data-ar="من نقل المطار إلى السفر لجميع الخليج — نغطي جميع احتياجاتك للنقل.">From airport transfers to Gulf-wide travel — we cover all your transportation needs with our Bahrain taxi service.</p>
+            <h2 class="section-title scroll-reveal">Our Taxi Services in Bahrain</h2>
+            <p class="section-desc scroll-reveal">From airport transfers to Gulf-wide travel — we cover all your transportation needs with our Bahrain taxi service.</p>
 
             <div class="seo-services-list scroll-reveal">
                 <div class="seo-service-item">
-                    <h3 class="seo-service-title" data-en="Airport Taxi Bahrain" data-ar="تكسي مطار البحرين">Airport Taxi Bahrain</h3>
-                    <p class="seo-service-desc" data-en="Our airport taxi Bahrain service meets you at Bahrain International Airport and takes you to Manama, Muharraq or any destination. Share your flight arrival time and we'll be ready." data-ar="خدمة تكسي المطار تستقبلك في مطار البحرين الدولي وتوصلك إلى المنامة أو المحرق أو أي وجهة. شاركنا موعد وصول رحلتك ونكون جاهزين.">Our airport taxi Bahrain service meets you at Bahrain International Airport and takes you to Manama, Muharraq or any destination. Share your flight arrival time and we'll be ready.</p>
-                    <p class="seo-service-link"><a href="/bahrain-airport-taxi/" data-en="Bahrain airport taxi details →" data-ar="تفاصيل تكسي مطار البحرين ←">Bahrain airport taxi details →</a></p>
+                    <h3 class="seo-service-title">Airport Taxi Bahrain</h3>
+                    <p class="seo-service-desc">Our airport taxi Bahrain service meets you at Bahrain International Airport and takes you to Manama, Muharraq or any destination. Share your flight arrival time and we'll be ready.</p>
+                    <p class="seo-service-link"><a href="/bahrain-airport-taxi/">Bahrain airport taxi details →</a></p>
                 </div>
                 <div class="seo-service-item">
-                    <h3 class="seo-service-title" data-en="City Taxi Manama" data-ar="تكسي مدينة المنامة">City Taxi Manama</h3>
-                    <p class="seo-service-desc" data-en="Need a taxi Manama? Our city taxi service covers Manama, Seef, Juffair and surrounding areas for quick local trips, business meetings or shopping." data-ar="تحتاج تكسي في المنامة؟ خدمتنا تغطي المنامة والسيف والجفير والمناطق المحيطة للتنقل السريع والاجتماعات والتسوق.">Need a taxi Manama? Our city taxi service covers Manama, Seef, Juffair and surrounding areas for quick local trips, business meetings or shopping.</p>
+                    <h3 class="seo-service-title">City Taxi Manama</h3>
+                    <p class="seo-service-desc">Need a taxi Manama? Our city taxi service covers Manama, Seef, Juffair and surrounding areas for quick local trips, business meetings or shopping.</p>
                 </div>
                 <div class="seo-service-item">
-                    <h3 class="seo-service-title" data-en="Taxi to Saudi Arabia" data-ar="تكسي إلى السعودية">Taxi to Saudi Arabia</h3>
-                    <p class="seo-service-desc" data-en="We provide taxi to Saudi Arabia for Dammam, Khobar and other destinations. GCC long distance taxi service with comfortable vehicles for the journey." data-ar="نوفر تكسي إلى السعودية للدمام والخبر ومدن أخرى. خدمة نقل خليجية لمسافات طويلة بسيارات مريحة.">We provide taxi to Saudi Arabia for Dammam, Khobar and other destinations. GCC long distance taxi service with comfortable vehicles for the journey.</p>
-                    <p class="seo-service-link"><a href="/bahrain-to-dammam-taxi/" data-en="Dammam, Khobar &amp; Dammam Airport taxi →" data-ar="تكسي الدمام والخبر ومطار الدمام ←">Dammam, Khobar &amp; Dammam Airport taxi →</a></p>
+                    <h3 class="seo-service-title">Taxi to Saudi Arabia</h3>
+                    <p class="seo-service-desc">We provide taxi to Saudi Arabia for Dammam, Khobar and other destinations. GCC long distance taxi service with comfortable vehicles for the journey.</p>
+                    <p class="seo-service-link"><a href="/bahrain-to-dammam-taxi/">Dammam, Khobar &amp; Dammam Airport taxi →</a></p>
                 </div>
                 <div class="seo-service-item">
-                    <h3 class="seo-service-title" data-en="Hotel to Airport Transfers" data-ar="نقل من الفندق إلى المطار">Hotel to Airport Transfers</h3>
-                    <p class="seo-service-desc" data-en="Reliable hotel to airport transfers from any Bahrain hotel to Bahrain International Airport. We track your flight for on-time pickup." data-ar="نقل موثوق من أي فندق في البحرين إلى مطار البحرين الدولي. نتابع رحلتك للوصول في الموعد.">Reliable hotel to airport transfers from any Bahrain hotel to Bahrain International Airport. We track your flight for on-time pickup.</p>
+                    <h3 class="seo-service-title">Hotel to Airport Transfers</h3>
+                    <p class="seo-service-desc">Reliable hotel to airport transfers from any Bahrain hotel to Bahrain International Airport. We track your flight for on-time pickup.</p>
                 </div>
                 <div class="seo-service-item">
-                    <h3 class="seo-service-title" data-en="GCC Long Distance Taxi" data-ar="تكسي مسافات طويلة الخليج">GCC Long Distance Taxi</h3>
-                    <p class="seo-service-desc" data-en="Our Bahrain taxi service extends across the GCC. Travel to UAE, Kuwait, Oman, Qatar and Saudi Arabia with Yellow Taxi Bahrain." data-ar="خدمتنا تمتد إلى كل دول الخليج. سفر إلى الإمارات والكويت وعمان وقطر والسعودية مع التاكسي الأصفر.">Our Bahrain taxi service extends across the GCC. Travel to UAE, Kuwait, Oman, Qatar and Saudi Arabia with Yellow Taxi Bahrain.</p>
+                    <h3 class="seo-service-title">GCC Long Distance Taxi</h3>
+                    <p class="seo-service-desc">Our Bahrain taxi service extends across the GCC. Travel to UAE, Kuwait, Oman, Qatar and Saudi Arabia with Yellow Taxi Bahrain.</p>
                 </div>
                 <div class="seo-service-item">
-                    <h3 class="seo-service-title" data-en="Cross-Border Routes — Bahrain ↔ Gulf Cities" data-ar="مسارات التكسي بين البحرين ومدن الخليج">Cross-Border Routes — Bahrain ↔ Gulf Cities</h3>
-                    <p class="seo-service-desc" data-en="Book taxi from Bahrain to Riyadh, Riyadh Airport, Qatar, Jubail, Kuwait, Dhahran, Muscat, Oman, and Kuwait Airport. We also pick you up for the return: from Riyadh Airport to Bahrain, from Kuwait or Kuwait Airport to Bahrain, and the same for Qatar, Jubail, Dhahran, Muscat, and Oman — one number for both directions." data-ar="احجز تكسي من البحرين إلى الرياض، مطار الرياض، قطر، الجبيل، الكويت، الظهران، مسقط، عمان، ومطار الكويت. نستقبلكم أيضاً في الاتجاه العكسي: من مطار الرياض إلى البحرين، من الكويت أو مطار الكويت إلى البحرين، ونفس الشيء لقطر والجبيل والظهران ومسقط وعمان — رقم واحد للذهاب والإياب.">Book taxi from Bahrain to Riyadh, Riyadh Airport, Qatar, Jubail, Kuwait, Dhahran, Muscat, Oman, and Kuwait Airport. We also pick you up for the return: from Riyadh Airport to Bahrain, from Kuwait or Kuwait Airport to Bahrain, and the same for Qatar, Jubail, Dhahran, Muscat, and Oman — one number for both directions.</p>
+                    <h3 class="seo-service-title">Cross-Border Routes — Bahrain ↔ Gulf Cities</h3>
+                    <p class="seo-service-desc">Book taxi from Bahrain to Riyadh, Riyadh Airport, Qatar, Jubail, Kuwait, Dhahran, Muscat, Oman, and Kuwait Airport. We also pick you up for the return: from Riyadh Airport to Bahrain, from Kuwait or Kuwait Airport to Bahrain, and the same for Qatar, Jubail, Dhahran, Muscat, and Oman — one number for both directions.</p>
                 </div>
             </div>
 
-            <h3 class="seo-service-title scroll-reveal seo-routes-heading" data-en="Popular routes (both directions)" data-ar="مسارات شائعة (ذهاب وإياب)">Popular routes (both directions)</h3>
-            <p class="section-desc scroll-reveal seo-routes-hint" data-en="Tap to call or WhatsApp — we arrange the same service in reverse." data-ar="اتصل أو واتساب — نرتب لك نفس الخدمة في الاتجاه العكسي.">Tap to call or WhatsApp — we arrange the same service in reverse.</p>
+            <h3 class="seo-service-title scroll-reveal seo-routes-heading">Popular routes (both directions)</h3>
+            <p class="section-desc scroll-reveal seo-routes-hint">Tap to call or WhatsApp — we arrange the same service in reverse.</p>
             <div class="areas-grid scroll-reveal seo-routes-grid">
-                <a class="area-item" href="/bahrain-airport-taxi/" data-route="bahrain-airport" data-en="Bahrain Airport Pickup" data-ar="استقبال مطار البحرين">Bahrain Airport Pickup</a>
-                <a class="area-item" href="/bahrain-airport-taxi/" data-route="to-bahrain-airport" data-en="To Bahrain Airport" data-ar="إلى مطار البحرين">To Bahrain Airport</a>
-                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="dammam" data-en="Bahrain → Dammam" data-ar="تكسي من البحرين إلى الدمام">Bahrain → Dammam</a>
-                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="dammam-to-bahrain" data-en="Dammam → Bahrain" data-ar="من الدمام إلى البحرين">Dammam → Bahrain</a>
-                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="khobar" data-en="Bahrain → Khobar" data-ar="تكسي من البحرين إلى الخبر">Bahrain → Khobar</a>
-                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="khobar-to-bahrain" data-en="Khobar → Bahrain" data-ar="من الخبر إلى البحرين">Khobar → Bahrain</a>
-                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh" data-en="Bahrain → Riyadh" data-ar="تكسي من البحرين إلى الرياض">Bahrain → Riyadh</a>
-                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh-to-bahrain" data-en="Riyadh → Bahrain" data-ar="من الرياض إلى البحرين">Riyadh → Bahrain</a>
-                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh-airport" data-en="Bahrain → Riyadh Airport" data-ar="تكسي من البحرين إلى مطار الرياض">Bahrain → Riyadh Airport</a>
-                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh-airport-to-bahrain" data-en="Riyadh Airport → Bahrain" data-ar="من مطار الرياض إلى البحرين">Riyadh Airport → Bahrain</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Qatar" data-route="qatar" data-en="Bahrain → Qatar" data-ar="تكسي من البحرين إلى قطر" data-en-msg="Hi, I need a taxi from Bahrain to Qatar" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى قطر" target="_blank" rel="noopener noreferrer">Bahrain → Qatar</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Qatar%20to%20Bahrain" data-route="qatar-to-bahrain" data-en="Qatar → Bahrain" data-ar="من قطر إلى البحرين" data-en-msg="Hi, I need a taxi from Qatar to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من قطر إلى البحرين" target="_blank" rel="noopener noreferrer">Qatar → Bahrain</a>
-                <a class="area-item" href="/bahrain-to-jubail-taxi/" data-route="jubail" data-en="Bahrain → Jubail" data-ar="تكسي من البحرين إلى الجبيل">Bahrain → Jubail</a>
-                <a class="area-item" href="/bahrain-to-jubail-taxi/" data-route="jubail-to-bahrain" data-en="Jubail → Bahrain" data-ar="من الجبيل إلى البحرين">Jubail → Bahrain</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Kuwait" data-route="kuwait" data-en="Bahrain → Kuwait" data-ar="تكسي من البحرين إلى الكويت" data-en-msg="Hi, I need a taxi from Bahrain to Kuwait" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الكويت" target="_blank" rel="noopener noreferrer">Bahrain → Kuwait</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Kuwait%20to%20Bahrain" data-route="kuwait-to-bahrain" data-en="Kuwait → Bahrain" data-ar="من الكويت إلى البحرين" data-en-msg="Hi, I need a taxi from Kuwait to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الكويت إلى البحرين" target="_blank" rel="noopener noreferrer">Kuwait → Bahrain</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Dhahran" data-route="dhahran" data-en="Bahrain → Dhahran" data-ar="تكسي من البحرين إلى الظهران" data-en-msg="Hi, I need a taxi from Bahrain to Dhahran" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الظهران" target="_blank" rel="noopener noreferrer">Bahrain → Dhahran</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Dhahran%20to%20Bahrain" data-route="dhahran-to-bahrain" data-en="Dhahran → Bahrain" data-ar="من الظهران إلى البحرين" data-en-msg="Hi, I need a taxi from Dhahran to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الظهران إلى البحرين" target="_blank" rel="noopener noreferrer">Dhahran → Bahrain</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Muscat" data-route="muscat" data-en="Bahrain → Muscat" data-ar="تكسي من البحرين إلى مسقط" data-en-msg="Hi, I need a taxi from Bahrain to Muscat" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مسقط" target="_blank" rel="noopener noreferrer">Bahrain → Muscat</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Muscat%20to%20Bahrain" data-route="muscat-to-bahrain" data-en="Muscat → Bahrain" data-ar="من مسقط إلى البحرين" data-en-msg="Hi, I need a taxi from Muscat to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مسقط إلى البحرين" target="_blank" rel="noopener noreferrer">Muscat → Bahrain</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Oman" data-route="oman" data-en="Bahrain → Oman" data-ar="تكسي من البحرين إلى عمان" data-en-msg="Hi, I need a taxi from Bahrain to Oman" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى عمان" target="_blank" rel="noopener noreferrer">Bahrain → Oman</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Oman%20to%20Bahrain" data-route="oman-to-bahrain" data-en="Oman → Bahrain" data-ar="من عمان إلى البحرين" data-en-msg="Hi, I need a taxi from Oman to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من عمان إلى البحرين" target="_blank" rel="noopener noreferrer">Oman → Bahrain</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Kuwait%20Airport" data-route="kuwait-airport" data-en="Bahrain → Kuwait Airport" data-ar="تكسي من البحرين إلى مطار الكويت" data-en-msg="Hi, I need a taxi from Bahrain to Kuwait Airport" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مطار الكويت" target="_blank" rel="noopener noreferrer">Bahrain → Kuwait Airport</a>
-                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Kuwait%20Airport%20to%20Bahrain" data-route="kuwait-airport-to-bahrain" data-en="Kuwait Airport → Bahrain" data-ar="من مطار الكويت إلى البحرين" data-en-msg="Hi, I need a taxi from Kuwait Airport to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مطار الكويت إلى البحرين" target="_blank" rel="noopener noreferrer">Kuwait Airport → Bahrain</a>
+                <a class="area-item" href="/bahrain-airport-taxi/" data-route="bahrain-airport">Bahrain Airport Pickup</a>
+                <a class="area-item" href="/bahrain-airport-taxi/" data-route="to-bahrain-airport">To Bahrain Airport</a>
+                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="dammam">Bahrain → Dammam</a>
+                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="dammam-to-bahrain">Dammam → Bahrain</a>
+                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="khobar">Bahrain → Khobar</a>
+                <a class="area-item" href="/bahrain-to-dammam-taxi/" data-route="khobar-to-bahrain">Khobar → Bahrain</a>
+                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh">Bahrain → Riyadh</a>
+                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh-to-bahrain">Riyadh → Bahrain</a>
+                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh-airport">Bahrain → Riyadh Airport</a>
+                <a class="area-item" href="/bahrain-to-riyadh-taxi/" data-route="riyadh-airport-to-bahrain">Riyadh Airport → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Qatar" data-route="qatar" data-en-msg="Hi, I need a taxi from Bahrain to Qatar" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى قطر" target="_blank" rel="noopener noreferrer">Bahrain → Qatar</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Qatar%20to%20Bahrain" data-route="qatar-to-bahrain" data-en-msg="Hi, I need a taxi from Qatar to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من قطر إلى البحرين" target="_blank" rel="noopener noreferrer">Qatar → Bahrain</a>
+                <a class="area-item" href="/bahrain-to-jubail-taxi/" data-route="jubail">Bahrain → Jubail</a>
+                <a class="area-item" href="/bahrain-to-jubail-taxi/" data-route="jubail-to-bahrain">Jubail → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Kuwait" data-route="kuwait" data-en-msg="Hi, I need a taxi from Bahrain to Kuwait" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الكويت" target="_blank" rel="noopener noreferrer">Bahrain → Kuwait</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Kuwait%20to%20Bahrain" data-route="kuwait-to-bahrain" data-en-msg="Hi, I need a taxi from Kuwait to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الكويت إلى البحرين" target="_blank" rel="noopener noreferrer">Kuwait → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Dhahran" data-route="dhahran" data-en-msg="Hi, I need a taxi from Bahrain to Dhahran" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الظهران" target="_blank" rel="noopener noreferrer">Bahrain → Dhahran</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Dhahran%20to%20Bahrain" data-route="dhahran-to-bahrain" data-en-msg="Hi, I need a taxi from Dhahran to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الظهران إلى البحرين" target="_blank" rel="noopener noreferrer">Dhahran → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Muscat" data-route="muscat" data-en-msg="Hi, I need a taxi from Bahrain to Muscat" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مسقط" target="_blank" rel="noopener noreferrer">Bahrain → Muscat</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Muscat%20to%20Bahrain" data-route="muscat-to-bahrain" data-en-msg="Hi, I need a taxi from Muscat to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مسقط إلى البحرين" target="_blank" rel="noopener noreferrer">Muscat → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Oman" data-route="oman" data-en-msg="Hi, I need a taxi from Bahrain to Oman" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى عمان" target="_blank" rel="noopener noreferrer">Bahrain → Oman</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Oman%20to%20Bahrain" data-route="oman-to-bahrain" data-en-msg="Hi, I need a taxi from Oman to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من عمان إلى البحرين" target="_blank" rel="noopener noreferrer">Oman → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Kuwait%20Airport" data-route="kuwait-airport" data-en-msg="Hi, I need a taxi from Bahrain to Kuwait Airport" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مطار الكويت" target="_blank" rel="noopener noreferrer">Bahrain → Kuwait Airport</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Kuwait%20Airport%20to%20Bahrain" data-route="kuwait-airport-to-bahrain" data-en-msg="Hi, I need a taxi from Kuwait Airport to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مطار الكويت إلى البحرين" target="_blank" rel="noopener noreferrer">Kuwait Airport → Bahrain</a>
             </div>
 
             <!-- Airport Transfers -->
             <div class="service-group scroll-reveal">
-                <h3 class="service-group-title" data-en="Airport Transfers" data-ar="نقل المطار">Airport Transfers</h3>
+                <h3 class="service-group-title">Airport Transfers</h3>
                 <div class="services-grid">
                     <article class="service-card">
                         <div class="service-img-wrap">
                             <img src="Airport.png" alt="Airport to hotel" width="303" height="166" loading="lazy">
-                            <span class="service-badge" data-en="Popular" data-ar="الأكثر طلباً">Popular</span>
+                            <span class="service-badge">Popular</span>
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Airport to Hotel" data-ar="من المطار إلى الفندق">Airport to Hotel</h4>
-                            <p data-en="Share your flight arrival time and we'll be waiting at the airport door. No stress, no waiting — we take you directly to your hotel in comfort." data-ar="شاركنا موعد نزول رحلتك ونكون في استقبالك عند باب المطار. بدون توتر أو انتظار — نوصلك مباشرة إلى فندقك براحة.">Share your flight arrival time and we'll be waiting at the airport door. No stress, no waiting — we take you directly to your hotel in comfort.</p>
+                            <h4>Airport to Hotel</h4>
+                            <p>Share your flight arrival time and we'll be waiting at the airport door. No stress, no waiting — we take you directly to your hotel in comfort.</p>
                         </div>
                     </article>
                     <article class="service-card">
@@ -335,8 +338,8 @@
                             <img src="HoteltoAirport.png" alt="Hotel to airport" width="664" height="386" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Hotel to Airport" data-ar="من الفندق إلى المطار">Hotel to Airport</h4>
-                            <p data-en="Reliable transfers from your hotel to Bahrain International Airport. We track your flight schedule — on time, every time, for business or leisure." data-ar="توصيل موثوق من فندقك إلى مطار البحرين الدولي. نتابع مواعيد رحلتك — في الموعد دائماً، للعمل أو الترفيه.">Reliable transfers from your hotel to Bahrain International Airport. We track your flight schedule — on time, every time, for business or leisure.</p>
+                            <h4>Hotel to Airport</h4>
+                            <p>Reliable transfers from your hotel to Bahrain International Airport. We track your flight schedule — on time, every time, for business or leisure.</p>
                         </div>
                     </article>
                     <article class="service-card">
@@ -344,8 +347,8 @@
                             <img src="Dammam.png" alt="Dammam Airport" width="590" height="370" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Dammam Airport, Saudi Arabia" data-ar="مطار الدمام السعودية">Dammam Airport, Saudi Arabia</h4>
-                            <p data-en="Direct transfers to King Fahd International Airport in Dammam. Ideal for business trips, tourism, or family visits. Book in advance for a smooth journey." data-ar="نقل مباشر إلى مطار الملك فهد الدولي في الدمام. مثالي لرحلات العمل أو السياحة أو الزيارات العائلية. احجز مسبقاً لرحلة ملساء.">Direct transfers to King Fahd International Airport in Dammam. Ideal for business trips, tourism, or family visits. Book in advance for a smooth journey.</p>
+                            <h4>Dammam Airport, Saudi Arabia</h4>
+                            <p>Direct transfers to King Fahd International Airport in Dammam. Ideal for business trips, tourism, or family visits. Book in advance for a smooth journey.</p>
                         </div>
                     </article>
                 </div>
@@ -353,15 +356,15 @@
 
             <!-- Gulf & Saudi -->
             <div class="service-group scroll-reveal">
-                <h3 class="service-group-title" data-en="Gulf & Saudi Arabia Travel" data-ar="سفر الخليج والسعودية">Gulf & Saudi Arabia Travel</h3>
+                <h3 class="service-group-title">Gulf & Saudi Arabia Travel</h3>
                 <div class="services-grid">
                     <article class="service-card">
                         <div class="service-img-wrap">
                             <img src="gcc.png" alt="Gulf travel" width="1200" height="800" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="All Gulf Countries" data-ar="جميع دول الخليج">All Gulf Countries</h4>
-                            <p data-en="Travel to UAE, Kuwait, Oman, Qatar, and Saudi Arabia. We handle cross-border trips, business meetings, family visits, and tourism — comfortable vehicles for short or long journeys." data-ar="نسافر إلى الإمارات والكويت وعمان وقطر والسعودية. ننفذ رحلات العبور والاجتماعات العائلية والزيارات — سيارات مريحة للرحلات القصيرة والطويلة.">Travel to UAE, Kuwait, Oman, Qatar, and Saudi Arabia. We handle cross-border trips, business meetings, family visits, and tourism — comfortable vehicles for short or long journeys.</p>
+                            <h4>All Gulf Countries</h4>
+                            <p>Travel to UAE, Kuwait, Oman, Qatar, and Saudi Arabia. We handle cross-border trips, business meetings, family visits, and tourism — comfortable vehicles for short or long journeys.</p>
                         </div>
                     </article>
                     <article class="service-card">
@@ -369,8 +372,8 @@
                             <img src="Saudi.png" alt="Saudi tourism" width="1200" height="900" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Saudi Arabia — Tourism & Transport" data-ar="السعودية — رحلات سياحية وتوصيل">Saudi Arabia — Tourism & Transport</h4>
-                            <p data-en="Tourist trips across Saudi Arabia or simple point-to-point transfers via the King Fahd Causeway. Visit historical sites, cities, or events — we plan the route with you." data-ar="رحلات سياحية في السعودية أو توصيل من نقطة لنقطة عبر جسر الملك فهد. زيارة المواقع التاريخية أو المدن أو المناسبات — نخطط المسار معك.">Tourist trips across Saudi Arabia or simple point-to-point transfers via the King Fahd Causeway. Visit historical sites, cities, or events — we plan the route with you.</p>
+                            <h4>Saudi Arabia — Tourism & Transport</h4>
+                            <p>Tourist trips across Saudi Arabia or simple point-to-point transfers via the King Fahd Causeway. Visit historical sites, cities, or events — we plan the route with you.</p>
                         </div>
                     </article>
                 </div>
@@ -378,15 +381,15 @@
 
             <!-- Bahrain Local -->
             <div class="service-group scroll-reveal">
-                <h3 class="service-group-title" data-en="Bahrain — Local & Tours" data-ar="البحرين — محلي وسياحي">Bahrain — Local & Tours</h3>
+                <h3 class="service-group-title">Bahrain — Local & Tours</h3>
                 <div class="services-grid">
                     <article class="service-card">
                         <div class="service-img-wrap">
                             <img src="bahrain.png" alt="Tours in Bahrain" width="638" height="402" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Tourist Trips in Bahrain" data-ar="رحلات سياحية داخل البحرين">Tourist Trips in Bahrain</h4>
-                            <p data-en="Discover Bahrain with our guided tours. From Bahrain Fort and Tree of Life to Muharraq heritage, Pearl Trail, and modern Manama — explore the island in comfort." data-ar="اكتشف البحرين مع جولاتنا السياحية. من قلعة البحرين وشجرة الحياة إلى تراث المحرق ومسار اللؤلؤ ومنامة الحديثة — استكشف الجزيرة براحة.">Discover Bahrain with our guided tours. From Bahrain Fort and Tree of Life to Muharraq heritage, Pearl Trail, and modern Manama — explore the island in comfort.</p>
+                            <h4>Tourist Trips in Bahrain</h4>
+                            <p>Discover Bahrain with our guided tours. From Bahrain Fort and Tree of Life to Muharraq heritage, Pearl Trail, and modern Manama — explore the island in comfort.</p>
                         </div>
                     </article>
                     <article class="service-card">
@@ -394,8 +397,8 @@
                             <img src="bah.png" alt="Local transport" width="780" height="439" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Transport Within Bahrain" data-ar="توصيل داخل البحرين">Transport Within Bahrain</h4>
-                            <p data-en="Quick and comfortable local transfers anywhere in Bahrain. Restaurants, malls, offices, hospitals, or home — we get you there on time." data-ar="توصيل سريع ومريح داخل البحرين. مطاعم، مولات، مكاتب، مستشفيات، أو المنزل — نوصلّك في الموعد.">Quick and comfortable local transfers anywhere in Bahrain. Restaurants, malls, offices, hospitals, or home — we get you there on time.</p>
+                            <h4>Transport Within Bahrain</h4>
+                            <p>Quick and comfortable local transfers anywhere in Bahrain. Restaurants, malls, offices, hospitals, or home — we get you there on time.</p>
                         </div>
                     </article>
                     <article class="service-card">
@@ -403,8 +406,8 @@
                             <img src="bahra.png" alt="Events" width="1000" height="667" loading="lazy">
                         </div>
                         <div class="service-content">
-                            <h4 data-en="Events & Occasions" data-ar="الفعاليات والمناسبات">Events & Occasions</h4>
-                            <p data-en="Weddings, conferences, corporate events, or family gatherings — we provide group transport with spacious vehicles for your guests." data-ar="أعراس، مؤتمرات، فعاليات عمل، أو تجمعات عائلية — نوفر نقل جماعي بسيارات واسعة للضيوف.">Weddings, conferences, corporate events, or family gatherings — we provide group transport with spacious vehicles for your guests.</p>
+                            <h4>Events & Occasions</h4>
+                            <p>Weddings, conferences, corporate events, or family gatherings — we provide group transport with spacious vehicles for your guests.</p>
                         </div>
                     </article>
                 </div>
@@ -416,17 +419,17 @@
     <section class="cta-banner scroll-reveal">
         <div class="cta-banner-inner">
             <div class="cta-banner-content">
-                <p class="cta-banner-tagline" data-en="One call, immediate service" data-ar="اتصال واحد وخدمة فورية">One call, immediate service</p>
-                <h3 class="cta-banner-title" data-en="Ready for your ride?" data-ar="مستعد لرحلتك؟">Ready for your ride?</h3>
-                <p class="cta-banner-desc" data-en="Call or WhatsApp now — we're available 24/7" data-ar="اتصل أو واتساب الآن — متوفرون على مدار الساعة">Call or WhatsApp now — we're available 24/7</p>
+                <p class="cta-banner-tagline">One call, immediate service</p>
+                <h3 class="cta-banner-title">Ready for your ride?</h3>
+                <p class="cta-banner-desc">Call or WhatsApp now — we're available 24/7</p>
                 <div class="cta-banner-buttons">
                     <a href="tel:+97337159404" class="cta-banner-btn cta-banner-btn-phone">
                         <span class="cta-banner-btn-icon">📞</span>
-                        <span data-en="Call 37159404" data-ar="اتصل 37159404">Call 37159404</span>
+                        <span>Call 37159404</span>
                     </a>
                     <a href="#" class="cta-banner-btn cta-banner-btn-whatsapp whatsapp-link" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر.">
                         <span class="cta-banner-btn-icon">WhatsApp</span>
-                        <span data-en="WhatsApp 37159404" data-ar="واتساب 37159404">WhatsApp 37159404</span>
+                        <span>WhatsApp 37159404</span>
                     </a>
                 </div>
             </div>
@@ -436,39 +439,39 @@
     <!-- Why Us Section -->
     <section class="why-us" id="why-us">
         <div class="container">
-            <h2 class="section-title scroll-reveal" data-en="Why Choose Yellow Taxi Bahrain" data-ar="لماذا التاكسي الأصفر البحرين">Why Choose Yellow Taxi Bahrain</h2>
-            <p class="section-desc scroll-reveal" data-en="We combine reliability, comfort, and professionalism in every trip." data-ar="نجمع الموثوقية والراحة والاحترافية في كل رحلة.">We combine reliability, comfort, and professionalism in every trip.</p>
+            <h2 class="section-title scroll-reveal">Why Choose Yellow Taxi Bahrain</h2>
+            <p class="section-desc scroll-reveal">We combine reliability, comfort, and professionalism in every trip.</p>
             <div class="why-us-layout scroll-reveal">
                 <div class="why-highlights">
-                    <h3 class="why-highlights-title" data-en="Key Benefits" data-ar="أبرز المميزات">Key Benefits</h3>
+                    <h3 class="why-highlights-title">Key Benefits</h3>
                     <ul class="why-highlights-list">
-                        <li data-en="24/7 Taxi Service" data-ar="خدمة تكسي ٢٤ ساعة">24/7 Taxi Service</li>
-                        <li data-en="Professional Drivers" data-ar="سائقون محترفون">Professional Drivers</li>
-                        <li data-en="Airport Transfers" data-ar="نقل المطار">Airport Transfers</li>
-                        <li data-en="GCC Travel Available" data-ar="سفر الخليج متاح">GCC Travel Available</li>
-                        <li data-en="Fast Pickup Anywhere in Bahrain" data-ar="استلام سريع من أي مكان في البحرين">Fast Pickup Anywhere in Bahrain</li>
+                        <li>24/7 Taxi Service</li>
+                        <li>Professional Drivers</li>
+                        <li>Airport Transfers</li>
+                        <li>GCC Travel Available</li>
+                        <li>Fast Pickup Anywhere in Bahrain</li>
                     </ul>
                 </div>
                 <div class="why-grid">
                 <div class="why-card">
                     <div class="why-icon">🕐</div>
-                    <h4 data-en="24/7 Availability" data-ar="متوفرون ٢٤ ساعة">24/7 Availability</h4>
-                    <p data-en="Every day, any hour. Early flights, late nights, or last-minute trips — we're always ready." data-ar="كل يوم، أي ساعة. رحلات مبكرة، ليالي متأخرة، أو رحلات فورية — نحن جاهزون دائماً.">Every day, any hour. Early flights, late nights, or last-minute trips — we're always ready.</p>
+                    <h4>24/7 Availability</h4>
+                    <p>Every day, any hour. Early flights, late nights, or last-minute trips — we're always ready.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-icon">⚡</div>
-                    <h4 data-en="Immediate Start" data-ar="بدء فوري">Immediate Start</h4>
-                    <p data-en="Call us and we arrange everything. No long waits — we begin service as soon as you need it." data-ar="اتصل بنا ونرتب كل شيء. دون انتظار طويل — نبدأ الخدمة فور حاجتك.">Call us and we arrange everything. No long waits — we begin service as soon as you need it.</p>
+                    <h4>Immediate Start</h4>
+                    <p>Call us and we arrange everything. No long waits — we begin service as soon as you need it.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-icon">🚗</div>
-                    <h4 data-en="All Vehicle Types" data-ar="جميع أنواع السيارات">All Vehicle Types</h4>
-                    <p data-en="From compact cars to large family SUVs — GMC, Chevrolet, and more. Choose what fits your trip." data-ar="من سيارات صغيرة إلى SUV عائلية كبيرة — جمس، شفروليه، وغيرها. اختر ما يناسب رحلتك.">From compact cars to large family SUVs — GMC, Chevrolet, and more. Choose what fits your trip.</p>
+                    <h4>All Vehicle Types</h4>
+                    <p>From compact cars to large family SUVs — GMC, Chevrolet, and more. Choose what fits your trip.</p>
                 </div>
                 <div class="why-card">
                     <div class="why-icon">🌍</div>
-                    <h4 data-en="Gulf-Wide Coverage" data-ar="تغطية خليجية">Gulf-Wide Coverage</h4>
-                    <p data-en="Bahrain and beyond — we travel across the Gulf. One number for all your regional trips." data-ar="البحرين وما بعدها — نسافر في كل الخليج. رقم واحد لجميع رحلاتك الإقليمية.">Bahrain and beyond — we travel across the Gulf. One number for all your regional trips.</p>
+                    <h4>Gulf-Wide Coverage</h4>
+                    <p>Bahrain and beyond — we travel across the Gulf. One number for all your regional trips.</p>
                 </div>
                 </div>
             </div>
@@ -478,17 +481,17 @@
     <!-- Fleet Section -->
     <section class="fleet" id="fleet">
         <div class="container">
-            <h2 class="section-title scroll-reveal" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</h2>
-            <p class="section-desc scroll-reveal" data-en="From small economy cars to large family SUVs — the right vehicle for every journey." data-ar="من سيارات اقتصادية صغيرة إلى SUV عائلية كبيرة — السيارة المناسبة لكل رحلة.">From small economy cars to large family SUVs — the right vehicle for every journey.</p>
+            <h2 class="section-title scroll-reveal">Our Fleet</h2>
+            <p class="section-desc scroll-reveal">From small economy cars to large family SUVs — the right vehicle for every journey.</p>
             <div class="fleet-content scroll-reveal">
                 <div class="fleet-text">
-                    <p data-en="We provide all types of vehicles: small cars for quick city trips, sedans for business, and large family cars like GMC Yukon, Chevrolet Tahoe/Suburban for airport transfers, Gulf trips, and group travel. Spacious, comfortable, and always clean." data-ar="نوفر جميع أنواع السيارات: صغيرة للتنقل السريع، سيدان للعمل، وسيارات عائلية كبيرة مثل جمس يوكون وشفروليه تاهو وسوبربان لنقل المطار ورحلات الخليج والسفر الجماعي. واسعة ومريحة ونظيفة دائماً.">We provide all types of vehicles: small cars for quick city trips, sedans for business, and large family cars like GMC Yukon, Chevrolet Tahoe/Suburban for airport transfers, Gulf trips, and group travel. Spacious, comfortable, and always clean.</p>
+                    <p>We provide all types of vehicles: small cars for quick city trips, sedans for business, and large family cars like GMC Yukon, Chevrolet Tahoe/Suburban for airport transfers, Gulf trips, and group travel. Spacious, comfortable, and always clean.</p>
                     <ul class="fleet-list">
-                        <li data-en="Compact & economy cars" data-ar="سيارات صغيرة واقتصادية">Compact & economy cars</li>
-                        <li data-en="Sedans for business" data-ar="سيدان للأعمال">Sedans for business</li>
-                        <li data-en="GMC Yukon & large SUVs" data-ar="جمس يوكون و SUV كبيرة">GMC Yukon & large SUVs</li>
-                        <li data-en="Chevrolet Tahoe & Suburban" data-ar="شفروليه تاهو وسوبربان">Chevrolet Tahoe & Suburban</li>
-                        <li data-en="Family & group transport" data-ar="نقل عائلي وجماعي">Family & group transport</li>
+                        <li>Compact & economy cars</li>
+                        <li>Sedans for business</li>
+                        <li>GMC Yukon & large SUVs</li>
+                        <li>Chevrolet Tahoe & Suburban</li>
+                        <li>Family & group transport</li>
                     </ul>
                 </div>
                 <div class="fleet-img-wrap">
@@ -501,26 +504,26 @@
     <!-- Areas We Serve -->
     <section class="areas-section scroll-reveal">
         <div class="container">
-            <h2 class="section-title" data-en="Areas We Serve" data-ar="المناطق التي نخدمها">Areas We Serve</h2>
-            <p class="section-desc" data-en="Yellow Taxi Bahrain serves locations across the Kingdom — no limits. Our Bahrain taxi service reaches you wherever you are." data-ar="التاكسي الأصفر يخدم مناطق المملكة — بدون حدود. نوصل إليك أينما كنت.">Yellow Taxi Bahrain serves locations across the Kingdom — no limits. Our Bahrain taxi service reaches you wherever you are.</p>
+            <h2 class="section-title">Areas We Serve</h2>
+            <p class="section-desc">Yellow Taxi Bahrain serves locations across the Kingdom — no limits. Our Bahrain taxi service reaches you wherever you are.</p>
             <div class="areas-grid">
-                <div class="area-item" data-en="Manama" data-ar="المنامة">Manama</div>
-                <div class="area-item" data-en="Muharraq" data-ar="المحرق">Muharraq</div>
-                <div class="area-item" data-en="Riffa" data-ar="الرفاع">Riffa</div>
-                <div class="area-item" data-en="Isa Town" data-ar="مدينة عيسى">Isa Town</div>
-                <div class="area-item" data-en="Saar" data-ar="سار">Saar</div>
-                <div class="area-item" data-en="Seef" data-ar="السيف">Seef</div>
-                <div class="area-item" data-en="Juffair" data-ar="الجفير">Juffair</div>
-                <div class="area-item" data-en="Adliya" data-ar="العدلية">Adliya</div>
-                <div class="area-item" data-en="Hamad Town" data-ar="مدينة حمد">Hamad Town</div>
-                <div class="area-item" data-en="Sitra" data-ar="سترة">Sitra</div>
-                <div class="area-item" data-en="Budaiya" data-ar="البديع">Budaiya</div>
-                <div class="area-item" data-en="Amwaj" data-ar="أمواج">Amwaj</div>
-                <div class="area-item" data-en="Diplomatic" data-ar="الدبلوماسية">Diplomatic</div>
-                <div class="area-item" data-en="Sanabis" data-ar="السنابس">Sanabis</div>
-                <div class="area-item" data-en="Jidhafs" data-ar="الجدحفص">Jidhafs</div>
-                <div class="area-item area-item-wide" data-en="Bahrain International Airport" data-ar="مطار البحرين الدولي">Bahrain International Airport</div>
-                <div class="area-item area-item-more" data-en="And more..." data-ar="والمزيد">And more...</div>
+                <div class="area-item">Manama</div>
+                <div class="area-item">Muharraq</div>
+                <div class="area-item">Riffa</div>
+                <div class="area-item">Isa Town</div>
+                <div class="area-item">Saar</div>
+                <div class="area-item">Seef</div>
+                <div class="area-item">Juffair</div>
+                <div class="area-item">Adliya</div>
+                <div class="area-item">Hamad Town</div>
+                <div class="area-item">Sitra</div>
+                <div class="area-item">Budaiya</div>
+                <div class="area-item">Amwaj</div>
+                <div class="area-item">Diplomatic</div>
+                <div class="area-item">Sanabis</div>
+                <div class="area-item">Jidhafs</div>
+                <div class="area-item area-item-wide">Bahrain International Airport</div>
+                <div class="area-item area-item-more">And more...</div>
             </div>
         </div>
     </section>
@@ -531,15 +534,15 @@
             <div class="stats-grid">
                 <div class="stat-item scroll-reveal">
                     <span class="stat-num">24/7</span>
-                    <span class="stat-label" data-en="Available" data-ar="متوفر">Available</span>
+                    <span class="stat-label">Available</span>
                 </div>
                 <div class="stat-item scroll-reveal">
-                    <span class="stat-num" data-en="All Gulf" data-ar="كل الخليج">All Gulf</span>
-                    <span class="stat-label" data-en="Coverage" data-ar="تغطية">Coverage</span>
+                    <span class="stat-num">All Gulf</span>
+                    <span class="stat-label">Coverage</span>
                 </div>
                 <div class="stat-item scroll-reveal">
-                    <span class="stat-num" data-en="Any Car" data-ar="أي سيارة">Any Car</span>
-                    <span class="stat-label" data-en="Size" data-ar="حجم">Size</span>
+                    <span class="stat-num">Any Car</span>
+                    <span class="stat-label">Size</span>
                 </div>
             </div>
         </div>
@@ -548,43 +551,43 @@
     <!-- FAQ Section -->
     <section class="faq-section scroll-reveal" id="faq">
         <div class="container">
-            <h2 class="section-title" data-en="Frequently Asked Questions" data-ar="الأسئلة الشائعة">Frequently Asked Questions</h2>
-            <p class="section-desc" data-en="Find quick answers about our Bahrain taxi service." data-ar="إجابات سريعة عن خدمة التاكسي في البحرين.">Find quick answers about our Bahrain taxi service.</p>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-desc">Find quick answers about our Bahrain taxi service.</p>
             <div class="faq-list">
                 <div class="faq-item">
                     <button type="button" class="faq-question-btn" aria-expanded="false">
-                        <span data-en="How can I book a taxi in Bahrain?" data-ar="كيف أحجز تكسي في البحرين؟">How can I book a taxi in Bahrain?</span>
+                        <span>How can I book a taxi in Bahrain?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer" data-en="You can book a taxi in Bahrain by calling us at 37159404 or messaging us on WhatsApp. We respond immediately and start service right away." data-ar="احجز تكسي بالاتصال على 37159404 أو واتساب. نرد فوراً ونبدأ الخدمة مباشرة.">You can book a taxi in Bahrain by calling us at <strong>37159404</strong> or messaging us on WhatsApp. We respond immediately and start service right away.</p>
+                        <p class="faq-answer">You can book a taxi in Bahrain by calling us at <strong>37159404</strong> or messaging us on WhatsApp. We respond immediately and start service right away.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button type="button" class="faq-question-btn" aria-expanded="false">
-                        <span data-en="Do you offer airport taxi service?" data-ar="هل تقدمون خدمة تكسي المطار؟">Do you offer airport taxi service?</span>
+                        <span>Do you offer airport taxi service?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer" data-en="Yes. We provide airport taxi service in Bahrain including transfers from Bahrain International Airport to your hotel and back. Share your flight time and we'll be at the airport door." data-ar="نعم. نوفر تكسي المطار من مطار البحرين الدولي إلى فندقك والعودة. شاركنا موعد رحلتك ونكون عند باب المطار.">Yes. We provide airport taxi service in Bahrain including transfers from Bahrain International Airport to your hotel and back. Share your flight time and we'll be at the airport door.</p>
+                        <p class="faq-answer">Yes. We provide airport taxi service in Bahrain including transfers from Bahrain International Airport to your hotel and back. Share your flight time and we'll be at the airport door.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button type="button" class="faq-question-btn" aria-expanded="false">
-                        <span data-en="Do you provide taxi trips to Saudi Arabia?" data-ar="هل توفرون رحلات تكسي إلى السعودية؟">Do you provide taxi trips to Saudi Arabia?</span>
+                        <span>Do you provide taxi trips to Saudi Arabia?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer" data-en="Yes. Yellow Taxi Bahrain provides taxi trips to Saudi Arabia including Dammam, Khobar and other GCC destinations." data-ar="نعم. التاكسي الأصفر يوفر رحلات إلى السعودية بما فيها الدمام والخبر ومدن خليجية أخرى.">Yes. Yellow Taxi Bahrain provides taxi trips to Saudi Arabia including Dammam, Khobar and other GCC destinations.</p>
+                        <p class="faq-answer">Yes. Yellow Taxi Bahrain provides taxi trips to Saudi Arabia including Dammam, Khobar and other GCC destinations.</p>
                     </div>
                 </div>
                 <div class="faq-item">
                     <button type="button" class="faq-question-btn" aria-expanded="false">
-                        <span data-en="Is the taxi service available 24/7?" data-ar="هل خدمة التاكسي متوفرة ٢٤ ساعة؟">Is the taxi service available 24/7?</span>
+                        <span>Is the taxi service available 24/7?</span>
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer-wrap">
-                        <p class="faq-answer" data-en="Yes. Our Bahrain taxi service is available 24 hours a day, 7 days a week. Call or WhatsApp anytime." data-ar="نعم. خدمتنا متوفرة ٢٤ ساعة يومياً طوال الأسبوع. اتصل أو واتساب في أي وقت.">Yes. Our Bahrain taxi service is available 24 hours a day, 7 days a week. Call or WhatsApp anytime.</p>
+                        <p class="faq-answer">Yes. Our Bahrain taxi service is available 24 hours a day, 7 days a week. Call or WhatsApp anytime.</p>
                     </div>
                 </div>
             </div>
@@ -594,19 +597,19 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title scroll-reveal" data-en="Contact Us" data-ar="تواصل معنا">Contact Us</h2>
-            <p class="contact-intro scroll-reveal" data-en="Available 24 hours, 7 days a week. Call or WhatsApp — we respond quickly and start service right away." data-ar="متوفرون ٢٤ ساعة طوال أيام الأسبوع. اتصل أو واتساب — نرد بسرعة ونبدأ الخدمة فوراً.">Available 24 hours, 7 days a week. Call or WhatsApp — we respond quickly and start service right away.</p>
+            <h2 class="section-title scroll-reveal">Contact Us</h2>
+            <p class="contact-intro scroll-reveal">Available 24 hours, 7 days a week. Call or WhatsApp — we respond quickly and start service right away.</p>
             <div class="contact-buttons">
                 <a href="tel:+97337159404" class="contact-btn phone">
                     <span class="contact-icon">📞</span>
-                    <span data-en="Call: 37159404" data-ar="اتصال: 37159404">Call: 37159404</span>
+                    <span>Call: 37159404</span>
                 </a>
                 <a href="#" class="contact-btn whatsapp whatsapp-link" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر.">
                     <span class="contact-icon">WhatsApp</span>
-                    <span data-en="WhatsApp: 37159404" data-ar="واتساب: 37159404">WhatsApp: 37159404</span>
+                    <span>WhatsApp: 37159404</span>
                 </a>
             </div>
-            <p class="contact-note" data-en="We arrange and start service immediately upon your call." data-ar="نتفق ونباشر بالخدمة بشكل مباشر عند اتصالك.">We arrange and start service immediately upon your call.</p>
+            <p class="contact-note">We arrange and start service immediately upon your call.</p>
         </div>
     </section>
 
@@ -617,19 +620,19 @@
                 <img src="2.png" alt="Yellow Taxi" class="footer-logo" width="1712" height="1035">
                 <nav class="footer-nav" aria-label="Footer">
                     <ul class="footer-nav-links">
-                        <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
-                        <li><a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a></li>
-                        <li><a href="#fleet" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</a></li>
-                        <li><a href="#faq" data-en="FAQ" data-ar="أسئلة شائعة">FAQ</a></li>
-                        <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="footer-contact">
-                    <a href="https://www.instagram.com/yellowtaxi.bh" class="footer-link" target="_blank" rel="noopener noreferrer" data-en="Instagram" data-ar="إنستغرام">Instagram</a>
-                    <a href="tel:+97337159404" class="footer-link" data-en="Call 37159404" data-ar="اتصل 37159404">Call 37159404</a>
-                    <a href="https://wa.me/97337159404?text=Hi%2C%20I%20would%20like%20to%20book%20a%20taxi%20service%20with%20Yellow%20Taxi." class="footer-link whatsapp-link" data-en="WhatsApp 37159404" data-ar="واتساب 37159404" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر." target="_blank" rel="noopener noreferrer">WhatsApp 37159404</a>
+                    <a href="https://www.instagram.com/yellowtaxi.bh" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="tel:+97337159404" class="footer-link">Call 37159404</a>
+                    <a href="https://wa.me/97337159404?text=Hi%2C%20I%20would%20like%20to%20book%20a%20taxi%20service%20with%20Yellow%20Taxi." class="footer-link whatsapp-link" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر." target="_blank" rel="noopener noreferrer">WhatsApp 37159404</a>
                 </div>
-                <p class="footer-text" data-en="© Yellow Taxi. Professional transportation services across Bahrain and the Gulf." data-ar="© التاكسي الأصفر. خدمات نقل احترافية في البحرين والخليج.">© Yellow Taxi. Professional transportation services across Bahrain and the Gulf.</p>
+                <p class="footer-text">© Yellow Taxi. Professional transportation services across Bahrain and the Gulf.</p>
             </div>
         </div>
     </footer>
