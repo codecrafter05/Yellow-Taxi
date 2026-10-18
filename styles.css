@@ -964,6 +964,17 @@ html.js .scroll-reveal.revealed {
     border-left: 4px solid var(--accent);
 }
 
+a.area-item {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.area-item:hover,
+a.area-item:focus-visible {
+    color: var(--black);
+}
+
 .area-item:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-hover);
@@ -1122,11 +1133,54 @@ html.js .scroll-reveal.revealed {
 
 .footer-logo {
     display: block;
-    margin: 0 auto 0.5rem;
+    margin: 0 auto 0.75rem;
     height: 42px;
     width: auto;
     object-fit: contain;
     opacity: 0.9;
+}
+
+.footer-nav {
+    margin-bottom: 0.75rem;
+}
+
+.footer-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav-links a,
+.footer-link {
+    color: var(--gray-300);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+.footer-nav-links a:hover,
+.footer-nav-links a:focus-visible,
+.footer-link:hover,
+.footer-link:focus-visible {
+    color: var(--white);
+}
+
+.footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 /* ===== 404 ===== */
@@ -1157,16 +1211,7 @@ html.js .scroll-reveal.revealed {
     margin-top: 0.5rem;
 }
 
-.footer-text {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
 /* ===== RTL Support ===== */
-[dir="rtl"] .nav-links {
-    flex-direction: row-reverse;
-}
-
 [dir="rtl"] .fleet-content {
     direction: rtl;
 }

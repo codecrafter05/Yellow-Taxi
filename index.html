@@ -34,15 +34,114 @@
     <meta name="twitter:image" content="https://yellow-taxi-bh.com/og-image.jpg">
     <meta name="twitter:image:alt" content="Yellow Taxi Bahrain — professional taxi and airport transfers">
 
-    <!-- Schema.org TaxiService -->
+    <!-- Schema.org @graph: LocalBusiness + WebSite + Services -->
+    <!-- TODO: add priceRange when confirmed (do not invent) -->
+    <!-- TODO: add Google Maps / Google Business Profile URL to sameAs -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "TaxiService",
-      "name": "Yellow Taxi Bahrain",
-      "areaServed": "Bahrain",
-      "telephone": "+97337159404",
-      "url": "https://yellow-taxi-bh.com/"
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://yellow-taxi-bh.com/#business",
+          "name": "Yellow Taxi Bahrain",
+          "url": "https://yellow-taxi-bh.com/",
+          "telephone": "+97337159404",
+          "image": "https://yellow-taxi-bh.com/og-image.jpg",
+          "logo": "https://yellow-taxi-bh.com/1.png",
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BH"
+          },
+          "areaServed": [
+            { "@type": "Country", "name": "Bahrain" },
+            { "@type": "City", "name": "Manama" },
+            { "@type": "City", "name": "Muharraq" },
+            { "@type": "City", "name": "Riffa" },
+            { "@type": "City", "name": "Seef" },
+            { "@type": "City", "name": "Saar" },
+            { "@type": "City", "name": "Juffair" },
+            { "@type": "City", "name": "Adliya" },
+            { "@type": "Airport", "name": "Bahrain International Airport" },
+            { "@type": "Country", "name": "Saudi Arabia" },
+            { "@type": "City", "name": "Dammam" },
+            { "@type": "City", "name": "Khobar" },
+            { "@type": "Airport", "name": "King Fahd International Airport" },
+            { "@type": "City", "name": "Riyadh" },
+            { "@type": "City", "name": "Jubail" },
+            { "@type": "Country", "name": "Qatar" }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/yellowtaxi.bh"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://yellow-taxi-bh.com/#website",
+          "url": "https://yellow-taxi-bh.com/",
+          "name": "Yellow Taxi Bahrain",
+          "publisher": { "@id": "https://yellow-taxi-bh.com/#business" },
+          "inLanguage": ["en", "ar"]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://yellow-taxi-bh.com/#service-airport-taxi",
+          "name": "Bahrain Airport Taxi",
+          "serviceType": "Airport taxi and transfers",
+          "provider": { "@id": "https://yellow-taxi-bh.com/#business" },
+          "areaServed": { "@type": "Airport", "name": "Bahrain International Airport" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://yellow-taxi-bh.com/#service-city-rides",
+          "name": "City Rides",
+          "serviceType": "Local taxi service",
+          "provider": { "@id": "https://yellow-taxi-bh.com/#business" },
+          "areaServed": { "@type": "Country", "name": "Bahrain" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://yellow-taxi-bh.com/#service-bahrain-saudi",
+          "name": "Bahrain to Saudi Arabia via King Fahd Causeway",
+          "serviceType": "Cross-border taxi",
+          "description": "Taxi transfers between Bahrain and Saudi Arabia including Dammam, Khobar, Riyadh, and Jubail via the King Fahd Causeway.",
+          "provider": { "@id": "https://yellow-taxi-bh.com/#business" },
+          "areaServed": [
+            { "@type": "Country", "name": "Bahrain" },
+            { "@type": "Country", "name": "Saudi Arabia" },
+            { "@type": "City", "name": "Dammam" },
+            { "@type": "City", "name": "Khobar" },
+            { "@type": "City", "name": "Riyadh" },
+            { "@type": "City", "name": "Jubail" }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://yellow-taxi-bh.com/#service-gcc-trips",
+          "name": "GCC Trips",
+          "serviceType": "Long-distance GCC taxi",
+          "provider": { "@id": "https://yellow-taxi-bh.com/#business" },
+          "areaServed": [
+            { "@type": "Country", "name": "Bahrain" },
+            { "@type": "Country", "name": "Saudi Arabia" },
+            { "@type": "Country", "name": "Qatar" }
+          ]
+        }
+      ]
     }
     </script>
     <!-- Schema.org FAQPage -->
@@ -190,24 +289,30 @@
             <h3 class="seo-service-title scroll-reveal seo-routes-heading" data-en="Popular routes (both directions)" data-ar="مسارات شائعة (ذهاب وإياب)">Popular routes (both directions)</h3>
             <p class="section-desc scroll-reveal seo-routes-hint" data-en="Tap to call or WhatsApp — we arrange the same service in reverse." data-ar="اتصل أو واتساب — نرتب لك نفس الخدمة في الاتجاه العكسي.">Tap to call or WhatsApp — we arrange the same service in reverse.</p>
             <div class="areas-grid scroll-reveal seo-routes-grid">
-                <div class="area-item" data-en="Bahrain → Riyadh" data-ar="تكسي من البحرين إلى الرياض">Bahrain → Riyadh</div>
-                <div class="area-item" data-en="Riyadh → Bahrain" data-ar="من الرياض إلى البحرين">Riyadh → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Riyadh Airport" data-ar="تكسي من البحرين إلى مطار الرياض">Bahrain → Riyadh Airport</div>
-                <div class="area-item" data-en="Riyadh Airport → Bahrain" data-ar="من مطار الرياض إلى البحرين">Riyadh Airport → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Qatar" data-ar="تكسي من البحرين إلى قطر">Bahrain → Qatar</div>
-                <div class="area-item" data-en="Qatar → Bahrain" data-ar="من قطر إلى البحرين">Qatar → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Jubail" data-ar="تكسي من البحرين إلى الجبيل">Bahrain → Jubail</div>
-                <div class="area-item" data-en="Jubail → Bahrain" data-ar="من الجبيل إلى البحرين">Jubail → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Kuwait" data-ar="تكسي من البحرين إلى الكويت">Bahrain → Kuwait</div>
-                <div class="area-item" data-en="Kuwait → Bahrain" data-ar="من الكويت إلى البحرين">Kuwait → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Dhahran" data-ar="تكسي من البحرين إلى الظهران">Bahrain → Dhahran</div>
-                <div class="area-item" data-en="Dhahran → Bahrain" data-ar="من الظهران إلى البحرين">Dhahran → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Muscat" data-ar="تكسي من البحرين إلى مسقط">Bahrain → Muscat</div>
-                <div class="area-item" data-en="Muscat → Bahrain" data-ar="من مسقط إلى البحرين">Muscat → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Oman" data-ar="تكسي من البحرين إلى عمان">Bahrain → Oman</div>
-                <div class="area-item" data-en="Oman → Bahrain" data-ar="من عمان إلى البحرين">Oman → Bahrain</div>
-                <div class="area-item" data-en="Bahrain → Kuwait Airport" data-ar="تكسي من البحرين إلى مطار الكويت">Bahrain → Kuwait Airport</div>
-                <div class="area-item" data-en="Kuwait Airport → Bahrain" data-ar="من مطار الكويت إلى البحرين">Kuwait Airport → Bahrain</div>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20Airport" data-route="bahrain-airport" data-en="Bahrain Airport Pickup" data-ar="استقبال مطار البحرين" data-en-msg="Hi, I need a taxi from Bahrain Airport" data-ar-msg="مرحباً، أحتاج تكسي من مطار البحرين" target="_blank" rel="noopener noreferrer">Bahrain Airport Pickup</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20to%20Bahrain%20Airport" data-route="to-bahrain-airport" data-en="To Bahrain Airport" data-ar="إلى مطار البحرين" data-en-msg="Hi, I need a taxi to Bahrain Airport" data-ar-msg="مرحباً، أحتاج تكسي إلى مطار البحرين" target="_blank" rel="noopener noreferrer">To Bahrain Airport</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Dammam" data-route="dammam" data-en="Bahrain → Dammam" data-ar="تكسي من البحرين إلى الدمام" data-en-msg="Hi, I need a taxi from Bahrain to Dammam" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الدمام" target="_blank" rel="noopener noreferrer">Bahrain → Dammam</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Dammam%20to%20Bahrain" data-route="dammam-to-bahrain" data-en="Dammam → Bahrain" data-ar="من الدمام إلى البحرين" data-en-msg="Hi, I need a taxi from Dammam to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الدمام إلى البحرين" target="_blank" rel="noopener noreferrer">Dammam → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Khobar" data-route="khobar" data-en="Bahrain → Khobar" data-ar="تكسي من البحرين إلى الخبر" data-en-msg="Hi, I need a taxi from Bahrain to Khobar" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الخبر" target="_blank" rel="noopener noreferrer">Bahrain → Khobar</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Khobar%20to%20Bahrain" data-route="khobar-to-bahrain" data-en="Khobar → Bahrain" data-ar="من الخبر إلى البحرين" data-en-msg="Hi, I need a taxi from Khobar to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الخبر إلى البحرين" target="_blank" rel="noopener noreferrer">Khobar → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Riyadh" data-route="riyadh" data-en="Bahrain → Riyadh" data-ar="تكسي من البحرين إلى الرياض" data-en-msg="Hi, I need a taxi from Bahrain to Riyadh" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الرياض" target="_blank" rel="noopener noreferrer">Bahrain → Riyadh</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Riyadh%20to%20Bahrain" data-route="riyadh-to-bahrain" data-en="Riyadh → Bahrain" data-ar="من الرياض إلى البحرين" data-en-msg="Hi, I need a taxi from Riyadh to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الرياض إلى البحرين" target="_blank" rel="noopener noreferrer">Riyadh → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Riyadh%20Airport" data-route="riyadh-airport" data-en="Bahrain → Riyadh Airport" data-ar="تكسي من البحرين إلى مطار الرياض" data-en-msg="Hi, I need a taxi from Bahrain to Riyadh Airport" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مطار الرياض" target="_blank" rel="noopener noreferrer">Bahrain → Riyadh Airport</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Riyadh%20Airport%20to%20Bahrain" data-route="riyadh-airport-to-bahrain" data-en="Riyadh Airport → Bahrain" data-ar="من مطار الرياض إلى البحرين" data-en-msg="Hi, I need a taxi from Riyadh Airport to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مطار الرياض إلى البحرين" target="_blank" rel="noopener noreferrer">Riyadh Airport → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Qatar" data-route="qatar" data-en="Bahrain → Qatar" data-ar="تكسي من البحرين إلى قطر" data-en-msg="Hi, I need a taxi from Bahrain to Qatar" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى قطر" target="_blank" rel="noopener noreferrer">Bahrain → Qatar</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Qatar%20to%20Bahrain" data-route="qatar-to-bahrain" data-en="Qatar → Bahrain" data-ar="من قطر إلى البحرين" data-en-msg="Hi, I need a taxi from Qatar to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من قطر إلى البحرين" target="_blank" rel="noopener noreferrer">Qatar → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Jubail" data-route="jubail" data-en="Bahrain → Jubail" data-ar="تكسي من البحرين إلى الجبيل" data-en-msg="Hi, I need a taxi from Bahrain to Jubail" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الجبيل" target="_blank" rel="noopener noreferrer">Bahrain → Jubail</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Jubail%20to%20Bahrain" data-route="jubail-to-bahrain" data-en="Jubail → Bahrain" data-ar="من الجبيل إلى البحرين" data-en-msg="Hi, I need a taxi from Jubail to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الجبيل إلى البحرين" target="_blank" rel="noopener noreferrer">Jubail → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Kuwait" data-route="kuwait" data-en="Bahrain → Kuwait" data-ar="تكسي من البحرين إلى الكويت" data-en-msg="Hi, I need a taxi from Bahrain to Kuwait" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الكويت" target="_blank" rel="noopener noreferrer">Bahrain → Kuwait</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Kuwait%20to%20Bahrain" data-route="kuwait-to-bahrain" data-en="Kuwait → Bahrain" data-ar="من الكويت إلى البحرين" data-en-msg="Hi, I need a taxi from Kuwait to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الكويت إلى البحرين" target="_blank" rel="noopener noreferrer">Kuwait → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Dhahran" data-route="dhahran" data-en="Bahrain → Dhahran" data-ar="تكسي من البحرين إلى الظهران" data-en-msg="Hi, I need a taxi from Bahrain to Dhahran" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى الظهران" target="_blank" rel="noopener noreferrer">Bahrain → Dhahran</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Dhahran%20to%20Bahrain" data-route="dhahran-to-bahrain" data-en="Dhahran → Bahrain" data-ar="من الظهران إلى البحرين" data-en-msg="Hi, I need a taxi from Dhahran to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من الظهران إلى البحرين" target="_blank" rel="noopener noreferrer">Dhahran → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Muscat" data-route="muscat" data-en="Bahrain → Muscat" data-ar="تكسي من البحرين إلى مسقط" data-en-msg="Hi, I need a taxi from Bahrain to Muscat" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مسقط" target="_blank" rel="noopener noreferrer">Bahrain → Muscat</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Muscat%20to%20Bahrain" data-route="muscat-to-bahrain" data-en="Muscat → Bahrain" data-ar="من مسقط إلى البحرين" data-en-msg="Hi, I need a taxi from Muscat to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مسقط إلى البحرين" target="_blank" rel="noopener noreferrer">Muscat → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Oman" data-route="oman" data-en="Bahrain → Oman" data-ar="تكسي من البحرين إلى عمان" data-en-msg="Hi, I need a taxi from Bahrain to Oman" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى عمان" target="_blank" rel="noopener noreferrer">Bahrain → Oman</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Oman%20to%20Bahrain" data-route="oman-to-bahrain" data-en="Oman → Bahrain" data-ar="من عمان إلى البحرين" data-en-msg="Hi, I need a taxi from Oman to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من عمان إلى البحرين" target="_blank" rel="noopener noreferrer">Oman → Bahrain</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Bahrain%20to%20Kuwait%20Airport" data-route="kuwait-airport" data-en="Bahrain → Kuwait Airport" data-ar="تكسي من البحرين إلى مطار الكويت" data-en-msg="Hi, I need a taxi from Bahrain to Kuwait Airport" data-ar-msg="مرحباً، أحتاج تكسي من البحرين إلى مطار الكويت" target="_blank" rel="noopener noreferrer">Bahrain → Kuwait Airport</a>
+                <a class="area-item whatsapp-link" href="https://wa.me/97337159404?text=Hi%2C%20I%20need%20a%20taxi%20from%20Kuwait%20Airport%20to%20Bahrain" data-route="kuwait-airport-to-bahrain" data-en="Kuwait Airport → Bahrain" data-ar="من مطار الكويت إلى البحرين" data-en-msg="Hi, I need a taxi from Kuwait Airport to Bahrain" data-ar-msg="مرحباً، أحتاج تكسي من مطار الكويت إلى البحرين" target="_blank" rel="noopener noreferrer">Kuwait Airport → Bahrain</a>
             </div>
 
             <!-- Airport Transfers -->
@@ -509,6 +614,20 @@
         <div class="container">
             <div class="footer-content">
                 <img src="2.png" alt="Yellow Taxi" class="footer-logo" width="1712" height="1035">
+                <nav class="footer-nav" aria-label="Footer">
+                    <ul class="footer-nav-links">
+                        <li><a href="#services" data-en="Services" data-ar="الخدمات">Services</a></li>
+                        <li><a href="#why-us" data-en="Why Us" data-ar="لماذا نحن">Why Us</a></li>
+                        <li><a href="#fleet" data-en="Our Fleet" data-ar="أسطولنا">Our Fleet</a></li>
+                        <li><a href="#faq" data-en="FAQ" data-ar="أسئلة شائعة">FAQ</a></li>
+                        <li><a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-contact">
+                    <a href="https://www.instagram.com/yellowtaxi.bh" class="footer-link" target="_blank" rel="noopener noreferrer" data-en="Instagram" data-ar="إنستغرام">Instagram</a>
+                    <a href="tel:+97337159404" class="footer-link" data-en="Call 37159404" data-ar="اتصل 37159404">Call 37159404</a>
+                    <a href="https://wa.me/97337159404?text=Hi%2C%20I%20would%20like%20to%20book%20a%20taxi%20service%20with%20Yellow%20Taxi." class="footer-link whatsapp-link" data-en="WhatsApp 37159404" data-ar="واتساب 37159404" data-en-msg="Hi, I would like to book a taxi service with Yellow Taxi." data-ar-msg="مرحباً، أود حجز خدمة نقل مع التاكسي الأصفر." target="_blank" rel="noopener noreferrer">WhatsApp 37159404</a>
+                </div>
                 <p class="footer-text" data-en="© Yellow Taxi. Professional transportation services across Bahrain and the Gulf." data-ar="© التاكسي الأصفر. خدمات نقل احترافية في البحرين والخليج.">© Yellow Taxi. Professional transportation services across Bahrain and the Gulf.</p>
             </div>
         </div>
