@@ -94,6 +94,17 @@
         initScrollReveal();
     }
 
+    var pageMeta = {
+        en: {
+            title: 'Bahrain Taxi | Yellow Taxi Bahrain 24/7 Airport & Hotel Transfers',
+            description: 'Book a taxi in Bahrain with Yellow Taxi — airport to hotel, local trips, and Gulf transfers around the clock. Call or WhatsApp 37159404 for fast pickup.'
+        },
+        ar: {
+            title: 'تاكسي البحرين 24 ساعة | تكسي المطار والسعودية - Yellow Taxi',
+            description: 'اطلب تاكسي في البحرين 24 ساعة: توصيل من وإلى مطار البحرين، مشاوير داخلية، ورحلات للدمام والخبر والرياض عبر جسر الملك فهد. اتصل أو واتساب 37159404.'
+        }
+    };
+
     function setLang(lang) {
         html.lang = lang;
         html.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -102,6 +113,12 @@
             var text = el.getAttribute('data-' + lang);
             if (text != null && text !== '') el.textContent = text;
         });
+
+        var meta = pageMeta[lang] || pageMeta.en;
+        document.title = meta.title;
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.setAttribute('content', meta.description);
+        /* og:description / twitter:description stay EN — social crawlers do not run JS */
 
         langBtns.forEach(function (btn) {
             var isActive = btn.getAttribute('data-lang') === lang;
