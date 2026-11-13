@@ -1502,6 +1502,10 @@ a.area-item:focus-visible {
     grid-template-columns: minmax(0, 28rem);
 }
 
+.route-page .route-highlight-grid--four {
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .route-page .route-highlight-card {
     display: block;
     padding: 1.25rem;
